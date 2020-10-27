@@ -82,4 +82,4 @@ yarn
 yarn start
 ```
 
-You are ready to go, to use the software, you can access `http://localhost:3000`.
+Congratulations! Now you are ready to go, to use the software, you can access `http://localhost:3000`.
