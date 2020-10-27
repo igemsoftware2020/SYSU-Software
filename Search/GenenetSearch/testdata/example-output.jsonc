@@ -1,0 +1,71 @@
+/**
+input:
+3  (n)
+4000 (user-add-len)
+2 24 43
+-2 2 0
+0 2 0
+*/
+{
+    "Proposals": {
+        "CDSs": [
+            {
+                "displayId": "MarA",
+                "genenet_cds_id": 0, // id = x * n + y, 表示邻接矩阵a[x][y]的边对应的CDS
+                "role": "cds",
+                "title": "MarA"
+            },
+            {
+                "displayId": "Rob",
+                "genenet_cds_id": 1, // a[0][1]
+                "role": "cds",
+                "title": "Rob"
+            },
+            {
+                "displayId": "SoxS",
+                "genenet_cds_id": 2, // a[0][2]
+                "role": "cds",
+                "title": "SoxS"
+            },
+            {
+                "displayId": "H-NS",
+                "genenet_cds_id": 3, // a[1][0] (n = 3)
+                "role": "cds",
+                "title": "H-NS"
+            },
+            {
+                "displayId": "CpxR",
+                "genenet_cds_id": 4, // a[1][1]
+                "role": "cds",
+                "title": "CpxR"
+            },
+            {
+                "displayId": "HypT",
+                "genenet_cds_id": 7, // a[2][1]
+                "role": "cds",
+                "title": "HypT"
+            }
+        ],
+        "Promoters": [
+            {
+                "displayId": "tolCp4",
+                "genenet_promoter_id": 0,
+                "role": "promoter",
+                "title": "tolCp4"
+            },
+            {
+                "displayId": "degPp",
+                "genenet_promoter_id": 1,
+                "role": "promoter",
+                "title": "degPp"
+            },
+            {
+                "displayId": "cysHp",
+                "genenet_promoter_id": 2,
+                "role": "promoter",
+                "title": "cysHp"
+            }
+        ],
+        "n": 3
+    }
+}

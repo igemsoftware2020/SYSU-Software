@@ -1,0 +1,5 @@
+C:/Users/hez20/source/repos/IGemDetector/yolov4/all_data/4_2/000002.jpg 35,54,100,94,0
+C:/Users/hez20/source/repos/IGemDetector/yolov4/all_data/1_1/000041.jpg 1073,296,1108,318,0 785,99,835,133,0
+C:/Users/hez20/source/repos/IGemDetector/yolov4/all_data/5_2/000007_1.jpg 93,391,176,463,0 279,389,357,464,0 306,515,383,591,0
+C:/Users/hez20/source/repos/IGemDetector/yolov4/all_data/4_2/000026.jpg 325,185,376,236,0 360,137,401,173,0
+C:/Users/hez20/source/repos/IGemDetector/yolov4/all_data/4_2/000039.jpg 1113,505,1147,566,0 928,507,965,566,0 754,505,788,570,0 755,509,789,575,0 561,501,609,564,0 1114,249,1145,311,0 928,250,961,310,0 755,254,791,309,0 576,246,615,311,0

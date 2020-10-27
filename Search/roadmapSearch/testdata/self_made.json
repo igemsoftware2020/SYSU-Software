@@ -1,0 +1,28 @@
+{
+    "persistentIdentity": "self_made_roadmap",
+    "article": null,
+    "description": null,
+    "ComponentDefinition": [
+        {
+            "persistentIdentity": "testPersistentIdentity",
+            "displayId": "testcomposite",
+            "role": [
+                "Composite"
+            ],
+            "Component": [
+                {
+                    "displayId": "araC",
+                    "definition": "93"
+                },
+                {
+                    "displayId": "camD",
+                    "definition": "94"
+                },
+                {
+                    "displayId": "bbs-1",
+                    "definition": "100"
+                }
+            ]
+        }
+    ]
+}

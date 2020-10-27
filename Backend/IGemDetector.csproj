@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="OpenCvSharp4" Version="4.5.0.20201013" />
+    <PackageReference Include="OpenCvSharp4.runtime.osx.10.15-x64" Version="4.5.0.20201013" />
+    <PackageReference Include="OpenCvSharp4.runtime.ubuntu.18.04-x64" Version="4.5.0.20201013" />
+    <PackageReference Include="OpenCvSharp4.runtime.win" Version="4.5.0.20201013" />
+  </ItemGroup>
+
+</Project>

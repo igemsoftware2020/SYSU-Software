@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "*.asm": "asm",
+        "unordered_map": "cpp",
+        "vector": "cpp",
+        "ostream": "cpp",
+        "queue": "cpp",
+        "*.ipp": "cpp",
+        "deque": "cpp",
+        "string": "cpp"
+    }
+}

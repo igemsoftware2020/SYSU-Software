@@ -1,0 +1,235 @@
+@import "../node_modules/@blueprintjs/core/lib/scss/variables";
+@import "../node_modules/@blueprintjs/core/lib/css/blueprint";
+
+$igem-part-width: 72px;
+
+.igem-mt-small {
+  margin-top: $pt-grid-size;
+}
+
+.igem-mt-medium {
+  margin-top: 2 * $pt-grid-size;
+}
+
+.igem-mt-large {
+  margin-top: 3 * $pt-grid-size;
+}
+
+.igem-mt-xlarge {
+  margin-top: 4 * $pt-grid-size;
+}
+
+.igem-mb-small {
+  margin-bottom: $pt-grid-size;
+}
+
+.igem-mb-medium {
+  margin-bottom: 2 * $pt-grid-size;
+}
+
+.igem-mb-large {
+  margin-bottom: 3 * $pt-grid-size;
+}
+
+.igem-mb-xlarge {
+  margin-bottom: 4 * $pt-grid-size;
+}
+
+.igem-ml-small {
+  margin-left: $pt-grid-size;
+}
+
+.igem-ml-medium {
+  margin-left: 2 * $pt-grid-size;
+}
+
+.igem-ml-large {
+  margin-left: 3 * $pt-grid-size;
+}
+
+.igem-ml-xlarge {
+  margin-left: 4 * $pt-grid-size;
+}
+
+.igem-mr-small {
+  margin-right: $pt-grid-size;
+}
+
+.igem-mr-medium {
+  margin-right: 2 * $pt-grid-size;
+}
+
+.igem-mr-large {
+  margin-right: 3 * $pt-grid-size;
+}
+
+.igem-mr-xlarge {
+  margin-right: 4 * $pt-grid-size;
+}
+
+.igem-ptop-small {
+  padding-top: $pt-grid-size;
+}
+
+.igem-ptop-medium {
+  padding-top: 2 * $pt-grid-size;
+}
+
+.igem-ptop-large {
+  padding-top: 3 * $pt-grid-size;
+}
+
+.igem-ptop-xlarge {
+  padding-top: 4 * $pt-grid-size;
+}
+
+.igem-pb-small {
+  padding-bottom: $pt-grid-size;
+}
+
+.igem-pb-medium {
+  padding-bottom: 2 * $pt-grid-size;
+}
+
+.igem-pb-large {
+  padding-bottom: 3 * $pt-grid-size;
+}
+
+.igem-pb-xlarge {
+  padding-bottom: 4 * $pt-grid-size;
+}
+
+.igem-pl-small {
+  padding-left: $pt-grid-size;
+}
+
+.igem-pl-medium {
+  padding-left: 2 * $pt-grid-size;
+}
+
+.igem-pl-large {
+  padding-left: 3 * $pt-grid-size;
+}
+
+.igem-pl-xlarge {
+  padding-left: 4 * $pt-grid-size;
+}
+
+.igem-pr-small {
+  padding-right: $pt-grid-size;
+}
+
+.igem-pr-medium {
+  padding-right: 2 * $pt-grid-size;
+}
+
+.igem-pr-large {
+  padding-right: 3 * $pt-grid-size;
+}
+
+.igem-pr-xlarge {
+  padding-right: 4 * $pt-grid-size;
+}
+
+.igem-full-width {
+  width: 100%;
+}
+
+.text-box {
+  color: $light-gray5;
+  background-color: rgba($black, 0.5);
+  padding: $pt-grid-size;
+  width: max-content;
+  // max-width: 80vw;
+}
+
+.child-vcenter {
+  display: flex;
+  align-items: center;
+}
+
+.child-hright {
+  display: flex;
+  align-items: center;
+}
+
+.self-vhcenter {
+  justify-self: center;
+  align-self: center;
+}
+
+.self-hcenter {
+  justify-self: center;
+}
+
+.#{$ns}-toast-message > .#{$ns}-progress-bar {
+  margin-top: $pt-grid-size / 2;
+  margin-bottom: 0;
+}
+
+.igem-device {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  background-image: url("./assets/device-bg.png");
+  background-position-y: top;
+  background-repeat: repeat-x;
+  background-size: $igem-part-width;
+}
+
+.igem-device-simple {
+  position: unset;
+  margin-top: $pt-grid-size;
+  margin-bottom: $pt-grid-size;
+}
+
+.igem-device-dragging {
+  opacity: 0;
+}
+
+.igem-part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.igem-part-icon {
+  max-width: $igem-part-width;
+  max-height: $igem-part-width;
+}
+
+.igem-part-name {
+  @extend .bp3-text-small;
+  @extend .bp3-text-muted;
+  font-size: 9pt;
+  max-width: $igem-part-width;
+  text-align: center;
+}
+
+.igem-part-divider {
+  min-width: $igem-part-width / 6;
+  min-height: $igem-part-width;
+  display: inline-block;
+}
+
+.igem-part-divider.igem-hover {
+  background-color: rgba($vermilion5, 0.5);
+}
+
+.igem-part-delete {
+  opacity: 50%;
+}
+
+.designer-canvas {
+  height: calc(100vh - #{$pt-navbar-height});
+  position: relative;
+  background-color: $pt-app-background-color;
+}
+
+.designer-canvas-svg {
+  height: calc(100% + #{$pt-navbar-height - 5px});
+  width: calc(100% + 15px);
+  position: relative;
+  margin-top: -$pt-navbar-height;
+  margin-left: -15px;
+}

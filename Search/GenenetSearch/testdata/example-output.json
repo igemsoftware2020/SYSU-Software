@@ -1,0 +1,63 @@
+{
+    "Proposals": {
+        "CDSs": [
+            {
+                "displayId": "MarA",
+                "genenet_cds_id": 0,
+                "role": "cds",
+                "title": "MarA"
+            },
+            {
+                "displayId": "Rob",
+                "genenet_cds_id": 1,
+                "role": "cds",
+                "title": "Rob"
+            },
+            {
+                "displayId": "SoxS",
+                "genenet_cds_id": 2,
+                "role": "cds",
+                "title": "SoxS"
+            },
+            {
+                "displayId": "H-NS",
+                "genenet_cds_id": 3,
+                "role": "cds",
+                "title": "H-NS"
+            },
+            {
+                "displayId": "CpxR",
+                "genenet_cds_id": 4,
+                "role": "cds",
+                "title": "CpxR"
+            },
+            {
+                "displayId": "HypT",
+                "genenet_cds_id": 7,
+                "role": "cds",
+                "title": "HypT"
+            }
+        ],
+        "Promoters": [
+            {
+                "displayId": "tolCp4",
+                "genenet_promoter_id": 0,
+                "role": "promoter",
+                "title": "tolCp4"
+            },
+            {
+                "displayId": "degPp",
+                "genenet_promoter_id": 1,
+                "role": "promoter",
+                "title": "degPp"
+            },
+            {
+                "displayId": "cysHp",
+                "genenet_promoter_id": 2,
+                "role": "promoter",
+                "title": "cysHp"
+            }
+        ],
+        "n": 3
+    }
+}

@@ -1,0 +1,22 @@
+include_directories("${Boost_INCLUDE_DIR}")
+include_directories("${CMAKE_CURRENT_SOURCE_DIR}/include")
+include_directories("${CMAKE_CURRENT_SOURCE_DIR}/include/mysql")
+include_directories("${CMAKE_CURRENT_SOURCE_DIR}/ext/fuzzywuzzy/include")
+include_directories("${CMAKE_CURRENT_SOURCE_DIR}/ext/nlohmann_json/include")
+
+add_library(
+    roadmapSearchLib 
+    common.cpp
+    Activity.cpp
+    Component.cpp
+    ComponentDefinition.cpp
+    DesignGraph.cpp
+    Location.cpp
+    mapping.cpp
+    mysqlException.cpp
+    search.cpp
+    SequenceAnnotation.cpp
+    Sequence.cpp
+    DAO.cpp
+    utility.cpp
+)

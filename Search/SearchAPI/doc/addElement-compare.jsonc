@@ -1,0 +1,114 @@
+{
+    // "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B3202",
+    "displayId": "BBa_B3202", // 必填，原则上应与数据库中其它元件的名字不同
+    // "version": "1",
+    // "wasDerivedFrom": "http://parts.igem.org/Part:BBa_B3202",
+    "wasGeneratedBy": "https://synbiohub.org/public/igem/igem2sbol/1",
+    "title": "BBa_B3202",
+    "description": null,
+    // "created": "2007-01-29T12:00:00Z",
+    // "modified": "2015-08-31T04:07:22Z",
+    "mutableProvenance": "antiquity",
+    // "topLevel": "https://synbiohub.org/public/igem/BBa_B3202/1",
+    "mutableDescription": "final construct for screening terminator B1002",
+    "mutableNotes": "final construct for screening terminators",
+    "creator": "Haiyao Huang",
+    "ownedBy": [ // 必填，给个用户专属的url (sequence 使用)
+        "https://synbiohub.org/user/james",
+        "https://synbiohub.org/user/myers"
+    ],
+    // "type": "http://www.biopax.org/release/biopax-level3.owl#DnaRegion", 
+    "role": [ // 必填，可给出列表让用户选
+        "Composite",
+        "engineered_region"
+    ],
+    // 可有0或1个Sequence
+    "Sequence": [
+        {
+            // "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B3202_sequence",
+            // "displayId": "BBa_B3202_sequence",
+            // "version": "1",
+            // "wasDerivedFrom": "http://parts.igem.org/Part:BBa_B3202",
+            // "wasGeneratedBy": "https://synbiohub.org/public/igem/igem2sbol/1",
+            // "topLevel": "https://synbiohub.org/public/igem/BBa_B3202_sequence/1",
+            // "ownedBy": [
+            //     "https://synbiohub.org/user/james",
+            //     "https://synbiohub.org/user/myers"
+            // ],
+            // 对于一个Sequence, elements必填
+            "elements": "ttatgacaacttgacggctacatcattcactttttcttcacaaccggcacggaactcgctcgggctggccccggtgcattttttaaatacccgcgagaaatagagttgatcgtcaaaaccaacattgcgaccgacggtggcgataggcatccgggtggtgctcaaaagcagcttcgcctggctgatacgttggtcctcgcgccagcttaagacgctaatccctaactgctggcggaaaagatgtgacagacgcgacggcgacaagcaaacatgctgtgcgacgctggcgatatcaaaattgctgtctgccaggtgatcgctgatgtactgacaagcctcgcgtacccgattatccatcggtggatggagcgactcgttaatcgcttccatgcgccgcagtaacaattgctcaagcagatttatcgccagcagctccgaatagcgcccttccccttgcccggcgttaatgatttgcccaaacaggtcgctgaaatgcggctggtgcgcttcatccgggcgaaagaaccccgtattggcaaatattgacggccagttaagccattcatgccagtaggcgcgcggacgaaagtaaacccactggtgataccattcgcgagcctccggatgacgaccgtagtgatgaatctctcctggcgggaacagcaaaatatcacccggtcggcaaacaaattctcgtccctgatttttcaccaccccctgaccgcgaatggtgagattgagaatataacctttcattcccagcggtcggtcgataaaaaaatcgagataaccgttggcctcaatcggcgttaaacccgccaccagatgggcattaaacgagtatcccggcagcaggggatcattttgcgcttcagccatacttttcatactcccgccattcagagaagaaaccaattgtccatattgcatcagacattgccgtcactgcgtcttttactggctcttctcgctaaccaaaccggtaaccccgcttattaaaagcattctgtaacaaagcgggaccaaagccatgacaaaaacgcgtaacaaaagtgtctataatcacggcagaaaagtccacattgattatttgcacggcgtcacactttgctatgccatagcatttttatccataagattagcggatcctacctgacgctttttatcgcaactctctactgtttctccatacccgtttttttgggctagctactagagaaagaggagaaatactagatggcttcctccgaagacgttatcaaagagttcatgcgtttcaaagttcgtatggaaggttccgttaacggtcacgagttcgaaatcgaaggtgaaggtgaaggtcgtccgtacgaaggtacccagaccgctaaactgaaagttaccaaaggtggtccgctgccgttcgcttgggacatcctgtccccgcagttccagtacggttccaaagcttacgttaaacacccggctgacatcccggactacctgaaactgtccttcccggaaggtttcaaatgggaacgtgttatgaacttcgaagacggtggtgttgttaccgttacccaggactcctccctgcaagacggtgagttcatctacaaagttaaactgcgtggtaccaacttcccgtccgacggtccggttatgcagaaaaaaaccatgggttgggaagcttccaccgaacgtatgtacccggaagacggtgctctgaaaggtgaaatcaaaatgcgtctgaaactgaaagacggtggtcactacgacgctgaagttaaaaccacctacatggctaaaaaaccggttcagctgccgggtgcttacaaaaccgacatcaaactggacatcacctcccacaacgaagactacaccatcgttgaacagtacgaacgtgctgaaggtcgtcactccaccggtgcttaataacgctgatagtgctagtgtagatcgctactagagcgcaaaaaaccccgcttcggcggggttttttcgctactagagaaagaggagaaatactagatgcgtaaaggagaagaacttttcactggagttgtcccaattcttgttgaattagatggtgatgttaatgggcacaaattttctgtcagtggagagggtgaaggtgatgcaacatacggaaaacttacccttaaatttatttgcactactggaaaactacctgttccatggccaacacttgtcactactttcggttatggtgttcaatgctttgcgagatacccagatcatatgaaacagcatgactttttcaagagtgccatgcccgaaggttatgtacaggaaagaactatatttttcaaagatgacgggaactacaagacacgtgctgaagtcaagtttgaaggtgatacccttgttaatagaatcgagttaaaaggtattgattttaaagaagatggaaacattcttggacacaaattggaatacaactataactcacacaatgtatacatcatggcagacaaacaaaagaatggaatcaaagttaacttcaaaattagacacaacattgaagatggaagcgttcaactagcagaccattatcaacaaaatactccaattggcgatggccctgtccttttaccagacaaccattacctgtccacacaatctgccctttcgaaagatcccaacgaaaagagagaccacatggtccttcttgagtttgtaacagctgctgggattacacatggcatggatgaactatacaaataataatactagagccaggcatcaaataaaacgaaaggctcagtcgaaagactgggcctttcgttttatctgttgtttgtcggtgaacgctctctactagagtcacactggctcaccttcgggtgggcctttctgcgtttata",
+            "encoding": "http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html" // 提供列表让用户选择，列表详见Sequence_encoding.png。默认是”http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html“
+            // "father_id": "https://synbiohub.org/public/igem/BBa_B3202"
+        }
+    ],
+    // Component可有0或多个，指向子元件（区别：子元件(Component所指向的对象）必须是数据库中有的元件，而SequenceAnnotation则可以任意））
+    "Component": [
+        {
+            // "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B3202/component2270279",
+            // "displayId": "component2270279",
+            // "version": "1",
+            "title": "BBa_I13516" // 必填，子元件的名字（唯一）
+            // "topLevel": "https://synbiohub.org/public/igem/BBa_B3202/1",
+            // "definition": "https://synbiohub.org/public/igem/BBa_I13516/1", 
+            // "access": "http://sbols.org/v2#public",
+            // "father_id": "https://synbiohub.org/public/igem/BBa_B3202"
+        },
+        {
+            // "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B3202/component2270294",
+            // "displayId": "component2270294",
+            // "version": "1",
+            "title": "BBa_B1202"
+            // "topLevel": "https://synbiohub.org/public/igem/BBa_B3202/1",
+            // "definition": "https://synbiohub.org/public/igem/BBa_B1202/1",
+            // "access": "http://sbols.org/v2#public",
+            // "father_id": "https://synbiohub.org/public/igem/BBa_B3202"
+        }
+    ],
+    // SequenceAnnotation可有0或多个，表示序列上的某一段是什么功能
+    "SequenceAnnotation": [
+        {
+            // "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B3202/annotation2270279",
+            // "displayId": "annotation2270279",
+            // "version": "1",
+            "title": "BBa_I13516", // 必填，如果指明的是某个Component指向的子元件是哪一段序列，请写该子元件的名字
+            // "topLevel": "https://synbiohub.org/public/igem/BBa_B3202/1",
+            // "component": "https://synbiohub.org/public/igem/BBa_B3202/component2270279/1",
+            // "father_id": "https://synbiohub.org/public/igem/BBa_B3202",
+            "Location": [ // 必须至少有一个Location
+                {
+                    // "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B3202/annotation2270279/range2270279",
+                    // "displayId": "range2270279",
+                    // "version": "1",
+                    // "topLevel": "https://synbiohub.org/public/igem/BBa_B3202/1",
+                    "direction": "http://wiki.synbiohub.org/wiki/Terms/igem#direction/reverse",
+                    "start": 1, // 起始位置（包括）
+                    "end": 1943, // 终止位置（不包括）
+                    "orientation": "http://sbols.org/v2#inline", // 提供列表给用户选，默认是"http://sbols.org/v2#inline"。列表详见SequenceAnnotation_orientation.png
+                    // "father_id": "https://synbiohub.org/public/igem/BBa_B3202/annotation2270279"
+                }
+            ]
+        },
+        {
+            // "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B3202/annotation2270294",
+            // "displayId": "annotation2270294",
+            // "version": "1",
+            "title": "BBa_B1202",
+            // "topLevel": "https://synbiohub.org/public/igem/BBa_B3202/1",
+            // "component": "https://synbiohub.org/public/igem/BBa_B3202/component2270294/1",
+            // "father_id": "https://synbiohub.org/public/igem/BBa_B3202",
+            "Location": [
+                {
+                    // "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B3202/annotation2270294/range2270294",
+                    // "displayId": "range2270294",
+                    // "version": "1",
+                    // "topLevel": "https://synbiohub.org/public/igem/BBa_B3202/1",
+                    "direction": "http://wiki.synbiohub.org/wiki/Terms/igem#direction/reverse",
+                    "start": 1951,
+                    "end": 2868,
+                    "orientation": "http://sbols.org/v2#inline",
+                    // "father_id": "https://synbiohub.org/public/igem/BBa_B3202/annotation2270294"
+                }
+            ]
+        }
+    ]
+}

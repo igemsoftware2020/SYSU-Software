@@ -1,0 +1,14 @@
+**/__pycache__/
+**/.vscode/
+**/.vs/
+**/.idea/
+**/.ionide/
+yolov4/all_data/
+yolov4/font/
+yolov4/img/
+yolov4/img_out/
+yolov4/input.jpg
+bin/
+obj/
+*.weights
+*.h5

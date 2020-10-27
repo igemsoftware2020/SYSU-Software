@@ -1,0 +1,106 @@
+{
+    "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B3202",
+    "displayId": "BBa_B3202",
+    "version": "1",
+    "wasDerivedFrom": "http://parts.igem.org/Part:BBa_B3202",
+    "wasGeneratedBy": "https://synbiohub.org/public/igem/igem2sbol/1",
+    "title": "BBa_B3202",
+    "description": null,
+    "created": "2007-01-29T12:00:00Z",
+    "modified": "2015-08-31T04:07:22Z",
+    "mutableProvenance": "antiquity",
+    "topLevel": "https://synbiohub.org/public/igem/BBa_B3202/1",
+    "mutableDescription": "final construct for screening terminator B1002",
+    "mutableNotes": "final construct for screening terminators",
+    "creator": "Haiyao Huang",
+    "type": "http://www.biopax.org/release/biopax-level3.owl#DnaRegion",
+    "role": [
+        "Composite",
+        "engineered_region"
+    ],
+    "Sequence": [
+        {
+            "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B3202_sequence",
+            "displayId": "BBa_B3202_sequence",
+            "version": "1",
+            "wasDerivedFrom": "http://parts.igem.org/Part:BBa_B3202",
+            "wasGeneratedBy": "https://synbiohub.org/public/igem/igem2sbol/1",
+            "topLevel": "https://synbiohub.org/public/igem/BBa_B3202_sequence/1",
+            "ownedBy": [
+                "https://synbiohub.org/user/james",
+                "https://synbiohub.org/user/myers"
+            ],
+            "elements": "ttatgacaacttgacggctacatcattcactttttcttcacaaccggcacggaactcgctcgggctggccccggtgcattttttaaatacccgcgagaaatagagttgatcgtcaaaaccaacattgcgaccgacggtggcgataggcatccgggtggtgctcaaaagcagcttcgcctggctgatacgttggtcctcgcgccagcttaagacgctaatccctaactgctggcggaaaagatgtgacagacgcgacggcgacaagcaaacatgctgtgcgacgctggcgatatcaaaattgctgtctgccaggtgatcgctgatgtactgacaagcctcgcgtacccgattatccatcggtggatggagcgactcgttaatcgcttccatgcgccgcagtaacaattgctcaagcagatttatcgccagcagctccgaatagcgcccttccccttgcccggcgttaatgatttgcccaaacaggtcgctgaaatgcggctggtgcgcttcatccgggcgaaagaaccccgtattggcaaatattgacggccagttaagccattcatgccagtaggcgcgcggacgaaagtaaacccactggtgataccattcgcgagcctccggatgacgaccgtagtgatgaatctctcctggcgggaacagcaaaatatcacccggtcggcaaacaaattctcgtccctgatttttcaccaccccctgaccgcgaatggtgagattgagaatataacctttcattcccagcggtcggtcgataaaaaaatcgagataaccgttggcctcaatcggcgttaaacccgccaccagatgggcattaaacgagtatcccggcagcaggggatcattttgcgcttcagccatacttttcatactcccgccattcagagaagaaaccaattgtccatattgcatcagacattgccgtcactgcgtcttttactggctcttctcgctaaccaaaccggtaaccccgcttattaaaagcattctgtaacaaagcgggaccaaagccatgacaaaaacgcgtaacaaaagtgtctataatcacggcagaaaagtccacattgattatttgcacggcgtcacactttgctatgccatagcatttttatccataagattagcggatcctacctgacgctttttatcgcaactctctactgtttctccatacccgtttttttgggctagctactagagaaagaggagaaatactagatggcttcctccgaagacgttatcaaagagttcatgcgtttcaaagttcgtatggaaggttccgttaacggtcacgagttcgaaatcgaaggtgaaggtgaaggtcgtccgtacgaaggtacccagaccgctaaactgaaagttaccaaaggtggtccgctgccgttcgcttgggacatcctgtccccgcagttccagtacggttccaaagcttacgttaaacacccggctgacatcccggactacctgaaactgtccttcccggaaggtttcaaatgggaacgtgttatgaacttcgaagacggtggtgttgttaccgttacccaggactcctccctgcaagacggtgagttcatctacaaagttaaactgcgtggtaccaacttcccgtccgacggtccggttatgcagaaaaaaaccatgggttgggaagcttccaccgaacgtatgtacccggaagacggtgctctgaaaggtgaaatcaaaatgcgtctgaaactgaaagacggtggtcactacgacgctgaagttaaaaccacctacatggctaaaaaaccggttcagctgccgggtgcttacaaaaccgacatcaaactggacatcacctcccacaacgaagactacaccatcgttgaacagtacgaacgtgctgaaggtcgtcactccaccggtgcttaataacgctgatagtgctagtgtagatcgctactagagcgcaaaaaaccccgcttcggcggggttttttcgctactagagaaagaggagaaatactagatgcgtaaaggagaagaacttttcactggagttgtcccaattcttgttgaattagatggtgatgttaatgggcacaaattttctgtcagtggagagggtgaaggtgatgcaacatacggaaaacttacccttaaatttatttgcactactggaaaactacctgttccatggccaacacttgtcactactttcggttatggtgttcaatgctttgcgagatacccagatcatatgaaacagcatgactttttcaagagtgccatgcccgaaggttatgtacaggaaagaactatatttttcaaagatgacgggaactacaagacacgtgctgaagtcaagtttgaaggtgatacccttgttaatagaatcgagttaaaaggtattgattttaaagaagatggaaacattcttggacacaaattggaatacaactataactcacacaatgtatacatcatggcagacaaacaaaagaatggaatcaaagttaacttcaaaattagacacaacattgaagatggaagcgttcaactagcagaccattatcaacaaaatactccaattggcgatggccctgtccttttaccagacaaccattacctgtccacacaatctgccctttcgaaagatcccaacgaaaagagagaccacatggtccttcttgagtttgtaacagctgctgggattacacatggcatggatgaactatacaaataataatactagagccaggcatcaaataaaacgaaaggctcagtcgaaagactgggcctttcgttttatctgttgtttgtcggtgaacgctctctactagagtcacactggctcaccttcgggtgggcctttctgcgtttata",
+            "encoding": "http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html",
+            "father_id": "https://synbiohub.org/public/igem/BBa_B3202"
+        }
+    ],
+    "Component": [
+        {
+            "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B3202/component2270279",
+            "displayId": "component2270279",
+            "version": "1",
+            "title": "BBa_I13516",
+            "topLevel": "https://synbiohub.org/public/igem/BBa_B3202/1",
+            "definition": "https://synbiohub.org/public/igem/BBa_I13516/1",
+            "access": "http://sbols.org/v2#public",
+            "father_id": "https://synbiohub.org/public/igem/BBa_B3202"
+        },
+        {
+            "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B3202/component2270294",
+            "displayId": "component2270294",
+            "version": "1",
+            "title": "BBa_B1202",
+            "topLevel": "https://synbiohub.org/public/igem/BBa_B3202/1",
+            "definition": "https://synbiohub.org/public/igem/BBa_B1202/1",
+            "access": "http://sbols.org/v2#public",
+            "father_id": "https://synbiohub.org/public/igem/BBa_B3202"
+        }
+    ],
+    "SequenceAnnotation": [
+        {
+            "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B3202/annotation2270279",
+            "displayId": "annotation2270279",
+            "version": "1",
+            "title": "BBa_I13516",
+            "topLevel": "https://synbiohub.org/public/igem/BBa_B3202/1",
+            "component": "https://synbiohub.org/public/igem/BBa_B3202/component2270279/1",
+            "father_id": "https://synbiohub.org/public/igem/BBa_B3202",
+            "Location": [
+                {
+                    "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B3202/annotation2270279/range2270279",
+                    "displayId": "range2270279",
+                    "version": "1",
+                    "topLevel": "https://synbiohub.org/public/igem/BBa_B3202/1",
+                    "direction": "http://wiki.synbiohub.org/wiki/Terms/igem#direction/reverse",
+                    "start": 1,
+                    "end": 1943,
+                    "orientation": "http://sbols.org/v2#inline",
+                    "father_id": "https://synbiohub.org/public/igem/BBa_B3202/annotation2270279"
+                }
+            ]
+        },
+        {
+            "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B3202/annotation2270294",
+            "displayId": "annotation2270294",
+            "version": "1",
+            "title": "BBa_B1202",
+            "topLevel": "https://synbiohub.org/public/igem/BBa_B3202/1",
+            "component": "https://synbiohub.org/public/igem/BBa_B3202/component2270294/1",
+            "father_id": "https://synbiohub.org/public/igem/BBa_B3202",
+            "Location": [
+                {
+                    "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B3202/annotation2270294/range2270294",
+                    "displayId": "range2270294",
+                    "version": "1",
+                    "topLevel": "https://synbiohub.org/public/igem/BBa_B3202/1",
+                    "direction": "http://wiki.synbiohub.org/wiki/Terms/igem#direction/reverse",
+                    "start": 1951,
+                    "end": 2868,
+                    "orientation": "http://sbols.org/v2#inline",
+                    "father_id": "https://synbiohub.org/public/igem/BBa_B3202/annotation2270294"
+                }
+            ]
+        }
+    ]
+}
