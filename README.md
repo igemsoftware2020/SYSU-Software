@@ -8,7 +8,7 @@
 ## Install Packages
 ```bash
 sudo apt install libboost-dev libboost-all-dev libmysqlcppconn-dev libjsoncpp-dev
-python -m pip install keras==2.3.1 tensorflow==1.15.4 opencv-python Pillow matplotlib numpy==1.18.5 flask flask_cors mysql-connector-python Bayesian-Optimization scikit-learn==0.22.2 sh pySBOL fuzzywuzzy scipy 
+python -m pip install keras==2.3.1 tensorflow==1.15.4 opencv-python Pillow matplotlib numpy==1.18.5 flask flask-cors mysql-connector-python Bayesian-Optimization scikit-learn==0.22.2 sh pySBOL fuzzywuzzy scipy 
 ```
 
 ## Build Software
