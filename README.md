@@ -84,3 +84,8 @@ yarn start
 ```
 
 Congratulations! Now you are ready to go, to use the software, you can access `http://localhost:3000`.
+
+## iGEM-CNN-Regression
+Deep Learning: TF & Binding Sites Affinity Prediction.
+
+We made it a sepreated open-source project, please refer to [CNN-Regression](https://github.com/sysu-software-2020/iGEM-CNN-Regression)
