@@ -62,7 +62,7 @@ export const GeneNet: React.FunctionComponent<GeneNetProps> = (props) => {
   const handleStartGenenetTask = useCallback(() => {
     setResult(null);
     setGeneState(1);
-    fireTask({ ...geneNetReq, pruneLimit: (geneNetReq.pruneLimit ?? 0) * 11.392405063 + 0.886075949 });
+    fireTask({ ...geneNetReq, pruneLimit: (geneNetReq.pruneLimit ?? 0) * 0.007777778 + 0.002222222 });
   }, [fireTask, geneNetReq]);
 
   useEffect(() => {
@@ -140,7 +140,7 @@ export const GeneNet: React.FunctionComponent<GeneNetProps> = (props) => {
             label="Prune Limit"
             labelFor="prune-limit-input"
             labelInfo="(only required if [Prune] is on)"
-            helperText="Prune limit is used to adjust the topology graph's complexity, higher value means higher complexity."
+            helperText="Prune limit is used to adjust the topology graph's complexity, higher value means lower complexity."
           >
             <InputGroup
               id="prune-limit-input"

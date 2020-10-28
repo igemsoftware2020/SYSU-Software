@@ -38,10 +38,18 @@ export const Bayes: React.FunctionComponent<BayesProps> = (props: BayesProps) =>
   const [conn, setConn] = useState<signalR.HubConnection | null>(null);
   const [values, setValues] = useState<number[]>([]);
   const [iters, setIters] = useState<number>(10);
-  const [genes, setGenes] = useState<number>(3);
+  const [genes, setGenes] = useState<string>("3");
+  const genesNum = React.useMemo(() => {
+    const value = parseInt(genes);
+    if (value > 0 && value < 6) {
+      return value;
+    } else {
+      return 3;
+    }
+  }, [genes]);
 
   const startSession = (iterNum: number, geneNum: number) => {
-    conn?.invoke("Start", iterNum); // , geneNum);
+    conn?.invoke("Start", geneNum, iterNum);
   };
 
   const provideResult = (result: number) => {
@@ -55,11 +63,11 @@ export const Bayes: React.FunctionComponent<BayesProps> = (props: BayesProps) =>
       .build();
 
     conn.start().catch((err) => console.log(err));
-    conn.on("ReceiveParameters", (x: number, y: number) => {
-      setValues([x, y]);
+    conn.on("ReceiveParameters", (v: number[]) => {
+      setValues(v);
     });
-    conn.on("ReceiveFinalResult", (target: number, x: number, y: number) => {
-      setValues([target, x, y]);
+    conn.on("ReceiveFinalResult", (target: number, v: number[]) => {
+      setValues([target, ...v]);
     });
     setConn(conn);
   }, []);
@@ -69,8 +77,8 @@ export const Bayes: React.FunctionComponent<BayesProps> = (props: BayesProps) =>
   const sendParam = () => {
     setValues([]);
     if (state === 0) {
-      if (genes <= 5) {
-        startSession(iters, genes);
+      if (genesNum <= 5) {
+        startSession(iters, genesNum);
       } else {
         Toaster.create().show({ message: "Gene count cannot be more than 5.", intent: "danger" });
       }
@@ -98,15 +106,13 @@ export const Bayes: React.FunctionComponent<BayesProps> = (props: BayesProps) =>
           </FormGroup>
           <FormGroup label="Gene Count" labelInfo="(required)">
             <InputGroup
-              onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
-                setGenes(parseInt(e.target.value));
-              }}
+              onChange={(e: React.ChangeEvent<HTMLInputElement>) => setGenes(e.target.value)}
               disabled={state !== 0}
               value={genes.toString()}
             />
           </FormGroup>
           {state <= iters + 1 ? (
-            [...Array(genes).keys()].map((idx) => (
+            [...Array(genesNum).keys()].map((idx) => (
               <FormGroup key={idx} label={`Express Level of ${idx + 1}`}>
                 <InputGroup disabled value={values[idx]?.toString() ?? ""} />
               </FormGroup>
@@ -116,7 +122,7 @@ export const Bayes: React.FunctionComponent<BayesProps> = (props: BayesProps) =>
               <FormGroup label="Target">
                 <InputGroup disabled value={values[0]?.toString() ?? ""} />
               </FormGroup>
-              {[...Array(genes).keys()].map((idx) => (
+              {[...Array(genesNum).keys()].map((idx) => (
                 <FormGroup key={idx} label={`Express Level of ${idx + 1}`}>
                   <InputGroup disabled value={values[idx + 1]?.toString() ?? ""} />
                 </FormGroup>
