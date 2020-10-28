@@ -8,7 +8,7 @@ http://maloadis.sysu-software.com
 
 ## Install Packages
 ```bash
-sudo apt install libboost-dev libboost-all-dev libmysqlcppconn-dev libjsoncpp-dev
+sudo apt install libboost-dev libboost-all-dev libmysqlcppconn-dev libjsoncpp-dev cmake git build-essential
 python -m pip install keras==2.3.1 tensorflow==1.15.4 opencv-python Pillow matplotlib numpy==1.18.5 flask flask-cors mysql-connector-python Bayesian-Optimization scikit-learn==0.22.2 sh pySBOL fuzzywuzzy scipy 
 ```
 
@@ -24,6 +24,17 @@ mkdir build && cd build
 cmake .. -DCMAKE_CXX_FLAGS=-std=c++2a
 make -j8
 cp genenet_search ../../Backend/genenet/search
+```
+
+## Import Database
+```bash
+cd Database/genenetDB
+unzip genenetDB-dumps.zip
+mysql -u root < genenetDB-dumps.sql
+
+cd ../
+unzip roadmapDB-dumps.zip
+mysql -u root < roadmapDB-dumps.sql
 ```
 
 ## Run Server
