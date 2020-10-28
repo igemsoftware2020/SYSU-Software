@@ -18,7 +18,7 @@ namespace IGemDetector
     {
         private static readonly ConcurrentDictionary<string, Process> sessions = new ConcurrentDictionary<string, Process>();
 
-        public async Task Start(int num)
+        public async Task Start(int num, int count)
         {
             var connId = Context.ConnectionId;
             sessions[connId] = Process.Start(new ProcessStartInfo
@@ -39,6 +39,7 @@ namespace IGemDetector
                     sessions.TryRemove(connId, out _);
                 }
             };
+            await sessions[connId].StandardInput.WriteLineAsync(count.ToString());
             await sessions[connId].StandardInput.WriteLineAsync(num.ToString());
             var str = await sessions[connId].StandardOutput.ReadLineAsync();
             var param = str.Split(" ", StringSplitOptions.RemoveEmptyEntries).Select(i => float.Parse(i)).ToList();

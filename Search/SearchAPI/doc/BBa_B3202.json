@@ -1,0 +1,1103 @@
+{
+    "persistentIdentity": "BBa_B3202",
+    "article": null,
+    "description": null,
+    "Activity": [
+        {
+            "persistentIdentity": "https://synbiohub.org/public/igem/igem2sbol",
+            "displayId": "igem2sbol",
+            "version": "1",
+            "title": "iGEM to SBOL conversion",
+            "description": "Conversion of the iGEM parts registry to SBOL2.1",
+            "topLevel": "https://synbiohub.org/public/igem/igem2sbol/1",
+            "ownedBy": [
+                "https://synbiohub.org/user/james",
+                "https://synbiohub.org/user/myers"
+            ],
+            "creator": [
+                "Chris J. Myers",
+                "James Alastair McLaughlin"
+            ],
+            "endedAtTime": "2017-03-06T15:00:00.000Z"
+        }
+    ],
+    "ComponentDefinition": [
+        {
+            "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B0010",
+            "displayId": "BBa_B0010",
+            "version": "1",
+            "wasDerivedFrom": "http://parts.igem.org/Part:BBa_B0010",
+            "wasGeneratedBy": "https://synbiohub.org/public/igem/igem2sbol/1",
+            "title": "BBa_B0010",
+            "description": null,
+            "created": "2003-11-19T12:00:00Z",
+            "modified": "2015-08-31T04:07:20Z",
+            "mutableProvenance": null,
+            "topLevel": "https://synbiohub.org/public/igem/BBa_B0010/1",
+            "mutableDescription": "Transcriptional terminator consisting of a 64 bp stem-loop.",
+            "mutableNotes": null,
+            "creator": "Randy Rettberg",
+            "type": "http://www.biopax.org/release/biopax-level3.owl#DnaRegion",
+            "role": "terminator",
+            "Sequence": [
+                {
+                    "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B0010_sequence",
+                    "displayId": "BBa_B0010_sequence",
+                    "version": "1",
+                    "wasDerivedFrom": "http://parts.igem.org/Part:BBa_B0010",
+                    "wasGeneratedBy": "https://synbiohub.org/public/igem/igem2sbol/1",
+                    "topLevel": "https://synbiohub.org/public/igem/BBa_B0010_sequence/1",
+                    "ownedBy": [
+                        "https://synbiohub.org/user/james",
+                        "https://synbiohub.org/user/myers"
+                    ],
+                    "elements": "ccaggcatcaaataaaacgaaaggctcagtcgaaagactgggcctttcgttttatctgttgtttgtcggtgaacgctctc",
+                    "encoding": "http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html",
+                    "father_id": "https://synbiohub.org/public/igem/BBa_B0010"
+                }
+            ],
+            "Component": [],
+            "SequenceAnnotation": [
+                {
+                    "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B0010/annotation4184",
+                    "displayId": "annotation4184",
+                    "version": "1",
+                    "title": "stem_loop",
+                    "topLevel": "https://synbiohub.org/public/igem/BBa_B0010/1",
+                    "component": null,
+                    "father_id": "https://synbiohub.org/public/igem/BBa_B0010",
+                    "Location": [
+                        {
+                            "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B0010/annotation4184/range4184",
+                            "displayId": "range4184",
+                            "version": "1",
+                            "topLevel": "https://synbiohub.org/public/igem/BBa_B0010/1",
+                            "direction": "http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward",
+                            "start": 12,
+                            "end": 56,
+                            "orientation": "http://sbols.org/v2#inline",
+                            "father_id": "https://synbiohub.org/public/igem/BBa_B0010/annotation4184"
+                        }
+                    ]
+                },
+                {
+                    "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B0010/annotation7018",
+                    "displayId": "annotation7018",
+                    "version": "1",
+                    "title": "BBa_B0010",
+                    "topLevel": "https://synbiohub.org/public/igem/BBa_B0010/1",
+                    "component": null,
+                    "father_id": "https://synbiohub.org/public/igem/BBa_B0010",
+                    "Location": [
+                        {
+                            "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B0010/annotation7018/range7018",
+                            "displayId": "range7018",
+                            "version": "1",
+                            "topLevel": "https://synbiohub.org/public/igem/BBa_B0010/1",
+                            "direction": "http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward",
+                            "start": 1,
+                            "end": 81,
+                            "orientation": "http://sbols.org/v2#inline",
+                            "father_id": "https://synbiohub.org/public/igem/BBa_B0010/annotation7018"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B0012",
+            "displayId": "BBa_B0012",
+            "version": "1",
+            "wasDerivedFrom": "http://parts.igem.org/Part:BBa_B0012",
+            "wasGeneratedBy": "https://synbiohub.org/public/igem/igem2sbol/1",
+            "title": "BBa_B0012",
+            "description": null,
+            "created": "2003-01-31T12:00:00Z",
+            "modified": "2015-08-31T04:07:20Z",
+            "mutableProvenance": "Derived from the TE terminator of T7 bacteriophage between Genes 1.3 and 1.4      <genbank>V01146</genbank>.",
+            "topLevel": "https://synbiohub.org/public/igem/BBa_B0012/1",
+            "mutableDescription": "Transcription terminator for the <i>E.coli</i> RNA polymerase.",
+            "mutableNotes": "<P> <P>Suggested by Sri Kosuri and Drew Endy as a high efficiency terminator. The      5' end cutoff was placed immediately after the TAA stop codon and the 3' end      cutoff was placed just prior to the RBS of Gene 1.4 (before AAGGAG).<P> Use anywhere transcription should be stopped when the gene of interest is upstream of this terminator.",
+            "creator": "Reshma Shetty",
+            "type": "http://www.biopax.org/release/biopax-level3.owl#DnaRegion",
+            "role": "terminator",
+            "Sequence": [
+                {
+                    "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B0012_sequence",
+                    "displayId": "BBa_B0012_sequence",
+                    "version": "1",
+                    "wasDerivedFrom": "http://parts.igem.org/Part:BBa_B0012",
+                    "wasGeneratedBy": "https://synbiohub.org/public/igem/igem2sbol/1",
+                    "topLevel": "https://synbiohub.org/public/igem/BBa_B0012_sequence/1",
+                    "ownedBy": [
+                        "https://synbiohub.org/user/james",
+                        "https://synbiohub.org/user/myers"
+                    ],
+                    "elements": "tcacactggctcaccttcgggtgggcctttctgcgtttata",
+                    "encoding": "http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html",
+                    "father_id": "https://synbiohub.org/public/igem/BBa_B0012"
+                }
+            ],
+            "Component": [],
+            "SequenceAnnotation": [
+                {
+                    "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B0012/annotation1686",
+                    "displayId": "annotation1686",
+                    "version": "1",
+                    "title": "T7 TE",
+                    "topLevel": "https://synbiohub.org/public/igem/BBa_B0012/1",
+                    "component": null,
+                    "father_id": "https://synbiohub.org/public/igem/BBa_B0012",
+                    "Location": [
+                        {
+                            "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B0012/annotation1686/range1686",
+                            "displayId": "range1686",
+                            "version": "1",
+                            "topLevel": "https://synbiohub.org/public/igem/BBa_B0012/1",
+                            "direction": "http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward",
+                            "start": 8,
+                            "end": 28,
+                            "orientation": "http://sbols.org/v2#inline",
+                            "father_id": "https://synbiohub.org/public/igem/BBa_B0012/annotation1686"
+                        }
+                    ]
+                },
+                {
+                    "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B0012/annotation1687",
+                    "displayId": "annotation1687",
+                    "version": "1",
+                    "title": "stop",
+                    "topLevel": "https://synbiohub.org/public/igem/BBa_B0012/1",
+                    "component": null,
+                    "father_id": "https://synbiohub.org/public/igem/BBa_B0012",
+                    "Location": [
+                        {
+                            "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B0012/annotation1687/range1687",
+                            "displayId": "range1687",
+                            "version": "1",
+                            "topLevel": "https://synbiohub.org/public/igem/BBa_B0012/1",
+                            "direction": "http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward",
+                            "start": 34,
+                            "end": 35,
+                            "orientation": "http://sbols.org/v2#inline",
+                            "father_id": "https://synbiohub.org/public/igem/BBa_B0012/annotation1687"
+                        }
+                    ]
+                },
+                {
+                    "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B0012/annotation1690",
+                    "displayId": "annotation1690",
+                    "version": "1",
+                    "title": "polya",
+                    "topLevel": "https://synbiohub.org/public/igem/BBa_B0012/1",
+                    "component": null,
+                    "father_id": "https://synbiohub.org/public/igem/BBa_B0012",
+                    "Location": [
+                        {
+                            "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B0012/annotation1690/range1690",
+                            "displayId": "range1690",
+                            "version": "1",
+                            "topLevel": "https://synbiohub.org/public/igem/BBa_B0012/1",
+                            "direction": "http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward",
+                            "start": 28,
+                            "end": 42,
+                            "orientation": "http://sbols.org/v2#inline",
+                            "father_id": "https://synbiohub.org/public/igem/BBa_B0012/annotation1690"
+                        }
+                    ]
+                },
+                {
+                    "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B0012/annotation7020",
+                    "displayId": "annotation7020",
+                    "version": "1",
+                    "title": "BBa_B0012",
+                    "topLevel": "https://synbiohub.org/public/igem/BBa_B0012/1",
+                    "component": null,
+                    "father_id": "https://synbiohub.org/public/igem/BBa_B0012",
+                    "Location": [
+                        {
+                            "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B0012/annotation7020/range7020",
+                            "displayId": "range7020",
+                            "version": "1",
+                            "topLevel": "https://synbiohub.org/public/igem/BBa_B0012/1",
+                            "direction": "http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward",
+                            "start": 1,
+                            "end": 42,
+                            "orientation": "http://sbols.org/v2#inline",
+                            "father_id": "https://synbiohub.org/public/igem/BBa_B0012/annotation7020"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B0034",
+            "displayId": "BBa_B0034",
+            "version": "1",
+            "wasDerivedFrom": "http://parts.igem.org/Part:BBa_B0034",
+            "wasGeneratedBy": "https://synbiohub.org/public/igem/igem2sbol/1",
+            "title": "BBa_B0034",
+            "description": null,
+            "created": "2003-01-31T12:00:00Z",
+            "modified": "2015-08-31T04:07:20Z",
+            "mutableProvenance": null,
+            "topLevel": "https://synbiohub.org/public/igem/BBa_B0034/1",
+            "mutableDescription": "RBS based on Elowitz repressilator.",
+            "mutableNotes": "Varies from -6 to +1 region from original sequence to accomodate BioBricks      suffix.   <p>No secondary structures are formed in the given RBS region. Users should check      for secondary structures induced in the RBS by upstream and downstream elements      in the +50 to -50 region, as such structures will greatly affect the strength      of the RBS.\n\nContact info for this part: <a href=\"mailto:(bchow@media.mit.edu)\">Brian Chow</a>",
+            "creator": "Vinay S Mahajan, Voichita D. Marinescu, Brian Chow, Alexander      D Wissner-Gross and Peter Carr IAP, 2003.",
+            "type": "http://www.biopax.org/release/biopax-level3.owl#DnaRegion",
+            "role": "rbs",
+            "Sequence": [
+                {
+                    "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B0034_sequence",
+                    "displayId": "BBa_B0034_sequence",
+                    "version": "1",
+                    "wasDerivedFrom": "http://parts.igem.org/Part:BBa_B0034",
+                    "wasGeneratedBy": "https://synbiohub.org/public/igem/igem2sbol/1",
+                    "topLevel": "https://synbiohub.org/public/igem/BBa_B0034_sequence/1",
+                    "ownedBy": [
+                        "https://synbiohub.org/user/james",
+                        "https://synbiohub.org/user/myers"
+                    ],
+                    "elements": "aaagaggagaaa",
+                    "encoding": "http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html",
+                    "father_id": "https://synbiohub.org/public/igem/BBa_B0034"
+                }
+            ],
+            "Component": [],
+            "SequenceAnnotation": [
+                {
+                    "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B0034/annotation23325",
+                    "displayId": "annotation23325",
+                    "version": "1",
+                    "title": "conserved",
+                    "topLevel": "https://synbiohub.org/public/igem/BBa_B0034/1",
+                    "component": null,
+                    "father_id": "https://synbiohub.org/public/igem/BBa_B0034",
+                    "Location": [
+                        {
+                            "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B0034/annotation23325/range23325",
+                            "displayId": "range23325",
+                            "version": "1",
+                            "topLevel": "https://synbiohub.org/public/igem/BBa_B0034/1",
+                            "direction": "http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward",
+                            "start": 5,
+                            "end": 9,
+                            "orientation": "http://sbols.org/v2#inline",
+                            "father_id": "https://synbiohub.org/public/igem/BBa_B0034/annotation23325"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B1002",
+            "displayId": "BBa_B1002",
+            "version": "1",
+            "wasDerivedFrom": "http://parts.igem.org/Part:BBa_B1002",
+            "wasGeneratedBy": "https://synbiohub.org/public/igem/igem2sbol/1",
+            "title": "BBa_B1002",
+            "description": null,
+            "created": "2006-08-29T11:00:00Z",
+            "modified": "2015-08-31T04:07:21Z",
+            "mutableProvenance": "antiquity",
+            "topLevel": "https://synbiohub.org/public/igem/BBa_B1002/1",
+            "mutableDescription": "Artifical terminator, estimated %T~=85",
+            "mutableNotes": "Bidirectional, with the reverse estimated to be less effective than the forward. Has a polyA tail of 6 residues.",
+            "creator": "Haiyao Huang",
+            "type": "http://www.biopax.org/release/biopax-level3.owl#DnaRegion",
+            "role": "terminator",
+            "Sequence": [
+                {
+                    "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B1002_sequence",
+                    "displayId": "BBa_B1002_sequence",
+                    "version": "1",
+                    "wasDerivedFrom": "http://parts.igem.org/Part:BBa_B1002",
+                    "wasGeneratedBy": "https://synbiohub.org/public/igem/igem2sbol/1",
+                    "topLevel": "https://synbiohub.org/public/igem/BBa_B1002_sequence/1",
+                    "ownedBy": [
+                        "https://synbiohub.org/user/james",
+                        "https://synbiohub.org/user/myers"
+                    ],
+                    "elements": "cgcaaaaaaccccgcttcggcggggttttttcgc",
+                    "encoding": "http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html",
+                    "father_id": "https://synbiohub.org/public/igem/BBa_B1002"
+                }
+            ],
+            "Component": [],
+            "SequenceAnnotation": [
+                {
+                    "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B1002/annotation1898412",
+                    "displayId": "annotation1898412",
+                    "version": "1",
+                    "title": "B1002",
+                    "topLevel": "https://synbiohub.org/public/igem/BBa_B1002/1",
+                    "component": null,
+                    "father_id": "https://synbiohub.org/public/igem/BBa_B1002",
+                    "Location": [
+                        {
+                            "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B1002/annotation1898412/range1898412",
+                            "displayId": "range1898412",
+                            "version": "1",
+                            "topLevel": "https://synbiohub.org/public/igem/BBa_B1002/1",
+                            "direction": "http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward",
+                            "start": 1,
+                            "end": 35,
+                            "orientation": "http://sbols.org/v2#inline",
+                            "father_id": "https://synbiohub.org/public/igem/BBa_B1002/annotation1898412"
+                        }
+                    ]
+                },
+                {
+                    "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B1002/annotation1898413",
+                    "displayId": "annotation1898413",
+                    "version": "1",
+                    "title": "stem loop",
+                    "topLevel": "https://synbiohub.org/public/igem/BBa_B1002/1",
+                    "component": null,
+                    "father_id": "https://synbiohub.org/public/igem/BBa_B1002",
+                    "Location": [
+                        {
+                            "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B1002/annotation1898413/range1898413",
+                            "displayId": "range1898413",
+                            "version": "1",
+                            "topLevel": "https://synbiohub.org/public/igem/BBa_B1002/1",
+                            "direction": "http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward",
+                            "start": 10,
+                            "end": 26,
+                            "orientation": "http://sbols.org/v2#inline",
+                            "father_id": "https://synbiohub.org/public/igem/BBa_B1002/annotation1898413"
+                        }
+                    ]
+                },
+                {
+                    "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B1002/annotation1898414",
+                    "displayId": "annotation1898414",
+                    "version": "1",
+                    "title": "Poly A tail",
+                    "topLevel": "https://synbiohub.org/public/igem/BBa_B1002/1",
+                    "component": null,
+                    "father_id": "https://synbiohub.org/public/igem/BBa_B1002",
+                    "Location": [
+                        {
+                            "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B1002/annotation1898414/range1898414",
+                            "displayId": "range1898414",
+                            "version": "1",
+                            "topLevel": "https://synbiohub.org/public/igem/BBa_B1002/1",
+                            "direction": "http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward",
+                            "start": 25,
+                            "end": 32,
+                            "orientation": "http://sbols.org/v2#inline",
+                            "father_id": "https://synbiohub.org/public/igem/BBa_B1002/annotation1898414"
+                        }
+                    ]
+                },
+                {
+                    "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B1002/annotation1898415",
+                    "displayId": "annotation1898415",
+                    "version": "1",
+                    "title": "Poly A tail",
+                    "topLevel": "https://synbiohub.org/public/igem/BBa_B1002/1",
+                    "component": null,
+                    "father_id": "https://synbiohub.org/public/igem/BBa_B1002",
+                    "Location": [
+                        {
+                            "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B1002/annotation1898415/range1898415",
+                            "displayId": "range1898415",
+                            "version": "1",
+                            "topLevel": "https://synbiohub.org/public/igem/BBa_B1002/1",
+                            "direction": "http://wiki.synbiohub.org/wiki/Terms/igem#direction/reverse",
+                            "start": 4,
+                            "end": 10,
+                            "orientation": "http://sbols.org/v2#inline",
+                            "father_id": "https://synbiohub.org/public/igem/BBa_B1002/annotation1898415"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B1202",
+            "displayId": "BBa_B1202",
+            "version": "1",
+            "wasDerivedFrom": "http://parts.igem.org/Part:BBa_B1202",
+            "wasGeneratedBy": "https://synbiohub.org/public/igem/igem2sbol/1",
+            "title": "BBa_B1202",
+            "description": null,
+            "created": "2007-01-29T12:00:00Z",
+            "modified": "2015-08-31T04:07:21Z",
+            "mutableProvenance": "antiquity",
+            "topLevel": "https://synbiohub.org/public/igem/BBa_B1202/1",
+            "mutableDescription": "intermediate construct for screening terminator B1002",
+            "mutableNotes": "intermediate construct for screening terminators",
+            "creator": "Haiyao Huang",
+            "type": "http://www.biopax.org/release/biopax-level3.owl#DnaRegion",
+            "role": "composite",
+            "Sequence": [
+                {
+                    "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B1202_sequence",
+                    "displayId": "BBa_B1202_sequence",
+                    "version": "1",
+                    "wasDerivedFrom": "http://parts.igem.org/Part:BBa_B1202",
+                    "wasGeneratedBy": "https://synbiohub.org/public/igem/igem2sbol/1",
+                    "topLevel": "https://synbiohub.org/public/igem/BBa_B1202_sequence/1",
+                    "ownedBy": [
+                        "https://synbiohub.org/user/james",
+                        "https://synbiohub.org/user/myers"
+                    ],
+                    "elements": "cgcaaaaaaccccgcttcggcggggttttttcgctactagagaaagaggagaaatactagatgcgtaaaggagaagaacttttcactggagttgtcccaattcttgttgaattagatggtgatgttaatgggcacaaattttctgtcagtggagagggtgaaggtgatgcaacatacggaaaacttacccttaaatttatttgcactactggaaaactacctgttccatggccaacacttgtcactactttcggttatggtgttcaatgctttgcgagatacccagatcatatgaaacagcatgactttttcaagagtgccatgcccgaaggttatgtacaggaaagaactatatttttcaaagatgacgggaactacaagacacgtgctgaagtcaagtttgaaggtgatacccttgttaatagaatcgagttaaaaggtattgattttaaagaagatggaaacattcttggacacaaattggaatacaactataactcacacaatgtatacatcatggcagacaaacaaaagaatggaatcaaagttaacttcaaaattagacacaacattgaagatggaagcgttcaactagcagaccattatcaacaaaatactccaattggcgatggccctgtccttttaccagacaaccattacctgtccacacaatctgccctttcgaaagatcccaacgaaaagagagaccacatggtccttcttgagtttgtaacagctgctgggattacacatggcatggatgaactatacaaataataatactagagccaggcatcaaataaaacgaaaggctcagtcgaaagactgggcctttcgttttatctgttgtttgtcggtgaacgctctctactagagtcacactggctcaccttcgggtgggcctttctgcgtttata",
+                    "encoding": "http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html",
+                    "father_id": "https://synbiohub.org/public/igem/BBa_B1202"
+                }
+            ],
+            "Component": [
+                {
+                    "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B1202/component1910957",
+                    "displayId": "component1910957",
+                    "version": "1",
+                    "title": "BBa_B1002",
+                    "topLevel": "https://synbiohub.org/public/igem/BBa_B1202/1",
+                    "definition": "https://synbiohub.org/public/igem/BBa_B1002/1",
+                    "access": "http://sbols.org/v2#public",
+                    "father_id": "https://synbiohub.org/public/igem/BBa_B1202"
+                },
+                {
+                    "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B1202/component1910959",
+                    "displayId": "component1910959",
+                    "version": "1",
+                    "title": "BBa_B0034",
+                    "topLevel": "https://synbiohub.org/public/igem/BBa_B1202/1",
+                    "definition": "https://synbiohub.org/public/igem/BBa_B0034/1",
+                    "access": "http://sbols.org/v2#public",
+                    "father_id": "https://synbiohub.org/public/igem/BBa_B1202"
+                },
+                {
+                    "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B1202/component1910960",
+                    "displayId": "component1910960",
+                    "version": "1",
+                    "title": "BBa_E0040",
+                    "topLevel": "https://synbiohub.org/public/igem/BBa_B1202/1",
+                    "definition": "https://synbiohub.org/public/igem/BBa_E0040/1",
+                    "access": "http://sbols.org/v2#public",
+                    "father_id": "https://synbiohub.org/public/igem/BBa_B1202"
+                },
+                {
+                    "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B1202/component1910961",
+                    "displayId": "component1910961",
+                    "version": "1",
+                    "title": "BBa_B0010",
+                    "topLevel": "https://synbiohub.org/public/igem/BBa_B1202/1",
+                    "definition": "https://synbiohub.org/public/igem/BBa_B0010/1",
+                    "access": "http://sbols.org/v2#public",
+                    "father_id": "https://synbiohub.org/public/igem/BBa_B1202"
+                },
+                {
+                    "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B1202/component1910963",
+                    "displayId": "component1910963",
+                    "version": "1",
+                    "title": "BBa_B0012",
+                    "topLevel": "https://synbiohub.org/public/igem/BBa_B1202/1",
+                    "definition": "https://synbiohub.org/public/igem/BBa_B0012/1",
+                    "access": "http://sbols.org/v2#public",
+                    "father_id": "https://synbiohub.org/public/igem/BBa_B1202"
+                }
+            ],
+            "SequenceAnnotation": [
+                {
+                    "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B1202/annotation1910957",
+                    "displayId": "annotation1910957",
+                    "version": "1",
+                    "title": "BBa_B1002",
+                    "topLevel": "https://synbiohub.org/public/igem/BBa_B1202/1",
+                    "component": "https://synbiohub.org/public/igem/BBa_B1202/component1910957/1",
+                    "father_id": "https://synbiohub.org/public/igem/BBa_B1202",
+                    "Location": [
+                        {
+                            "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B1202/annotation1910957/range1910957",
+                            "displayId": "range1910957",
+                            "version": "1",
+                            "topLevel": "https://synbiohub.org/public/igem/BBa_B1202/1",
+                            "direction": "http://wiki.synbiohub.org/wiki/Terms/igem#direction/reverse",
+                            "start": 1,
+                            "end": 35,
+                            "orientation": "http://sbols.org/v2#inline",
+                            "father_id": "https://synbiohub.org/public/igem/BBa_B1202/annotation1910957"
+                        }
+                    ]
+                },
+                {
+                    "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B1202/annotation1910959",
+                    "displayId": "annotation1910959",
+                    "version": "1",
+                    "title": "BBa_B0034",
+                    "topLevel": "https://synbiohub.org/public/igem/BBa_B1202/1",
+                    "component": "https://synbiohub.org/public/igem/BBa_B1202/component1910959/1",
+                    "father_id": "https://synbiohub.org/public/igem/BBa_B1202",
+                    "Location": [
+                        {
+                            "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B1202/annotation1910959/range1910959",
+                            "displayId": "range1910959",
+                            "version": "1",
+                            "topLevel": "https://synbiohub.org/public/igem/BBa_B1202/1",
+                            "direction": "http://wiki.synbiohub.org/wiki/Terms/igem#direction/reverse",
+                            "start": 43,
+                            "end": 55,
+                            "orientation": "http://sbols.org/v2#inline",
+                            "father_id": "https://synbiohub.org/public/igem/BBa_B1202/annotation1910959"
+                        }
+                    ]
+                },
+                {
+                    "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B1202/annotation1910960",
+                    "displayId": "annotation1910960",
+                    "version": "1",
+                    "title": "BBa_E0040",
+                    "topLevel": "https://synbiohub.org/public/igem/BBa_B1202/1",
+                    "component": "https://synbiohub.org/public/igem/BBa_B1202/component1910960/1",
+                    "father_id": "https://synbiohub.org/public/igem/BBa_B1202",
+                    "Location": [
+                        {
+                            "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B1202/annotation1910960/range1910960",
+                            "displayId": "range1910960",
+                            "version": "1",
+                            "topLevel": "https://synbiohub.org/public/igem/BBa_B1202/1",
+                            "direction": "http://wiki.synbiohub.org/wiki/Terms/igem#direction/reverse",
+                            "start": 61,
+                            "end": 781,
+                            "orientation": "http://sbols.org/v2#inline",
+                            "father_id": "https://synbiohub.org/public/igem/BBa_B1202/annotation1910960"
+                        }
+                    ]
+                },
+                {
+                    "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B1202/annotation1910961",
+                    "displayId": "annotation1910961",
+                    "version": "1",
+                    "title": "BBa_B0010",
+                    "topLevel": "https://synbiohub.org/public/igem/BBa_B1202/1",
+                    "component": "https://synbiohub.org/public/igem/BBa_B1202/component1910961/1",
+                    "father_id": "https://synbiohub.org/public/igem/BBa_B1202",
+                    "Location": [
+                        {
+                            "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B1202/annotation1910961/range1910961",
+                            "displayId": "range1910961",
+                            "version": "1",
+                            "topLevel": "https://synbiohub.org/public/igem/BBa_B1202/1",
+                            "direction": "http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward",
+                            "start": 789,
+                            "end": 869,
+                            "orientation": "http://sbols.org/v2#inline",
+                            "father_id": "https://synbiohub.org/public/igem/BBa_B1202/annotation1910961"
+                        }
+                    ]
+                },
+                {
+                    "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B1202/annotation1910963",
+                    "displayId": "annotation1910963",
+                    "version": "1",
+                    "title": "BBa_B0012",
+                    "topLevel": "https://synbiohub.org/public/igem/BBa_B1202/1",
+                    "component": "https://synbiohub.org/public/igem/BBa_B1202/component1910963/1",
+                    "father_id": "https://synbiohub.org/public/igem/BBa_B1202",
+                    "Location": [
+                        {
+                            "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B1202/annotation1910963/range1910963",
+                            "displayId": "range1910963",
+                            "version": "1",
+                            "topLevel": "https://synbiohub.org/public/igem/BBa_B1202/1",
+                            "direction": "http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward",
+                            "start": 877,
+                            "end": 918,
+                            "orientation": "http://sbols.org/v2#inline",
+                            "father_id": "https://synbiohub.org/public/igem/BBa_B1202/annotation1910963"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B3202",
+            "displayId": "BBa_B3202",
+            "version": "1",
+            "wasDerivedFrom": "http://parts.igem.org/Part:BBa_B3202",
+            "wasGeneratedBy": "https://synbiohub.org/public/igem/igem2sbol/1",
+            "title": "BBa_B3202",
+            "description": null,
+            "created": "2007-01-29T12:00:00Z",
+            "modified": "2015-08-31T04:07:22Z",
+            "mutableProvenance": "antiquity",
+            "topLevel": "https://synbiohub.org/public/igem/BBa_B3202/1",
+            "mutableDescription": "final construct for screening terminator B1002",
+            "mutableNotes": "final construct for screening terminators",
+            "creator": "Haiyao Huang",
+            "type": "http://www.biopax.org/release/biopax-level3.owl#DnaRegion",
+            "role": "composite",
+            "Sequence": [
+                {
+                    "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B3202_sequence",
+                    "displayId": "BBa_B3202_sequence",
+                    "version": "1",
+                    "wasDerivedFrom": "http://parts.igem.org/Part:BBa_B3202",
+                    "wasGeneratedBy": "https://synbiohub.org/public/igem/igem2sbol/1",
+                    "topLevel": "https://synbiohub.org/public/igem/BBa_B3202_sequence/1",
+                    "ownedBy": [
+                        "https://synbiohub.org/user/james",
+                        "https://synbiohub.org/user/myers"
+                    ],
+                    "elements": "ttatgacaacttgacggctacatcattcactttttcttcacaaccggcacggaactcgctcgggctggccccggtgcattttttaaatacccgcgagaaatagagttgatcgtcaaaaccaacattgcgaccgacggtggcgataggcatccgggtggtgctcaaaagcagcttcgcctggctgatacgttggtcctcgcgccagcttaagacgctaatccctaactgctggcggaaaagatgtgacagacgcgacggcgacaagcaaacatgctgtgcgacgctggcgatatcaaaattgctgtctgccaggtgatcgctgatgtactgacaagcctcgcgtacccgattatccatcggtggatggagcgactcgttaatcgcttccatgcgccgcagtaacaattgctcaagcagatttatcgccagcagctccgaatagcgcccttccccttgcccggcgttaatgatttgcccaaacaggtcgctgaaatgcggctggtgcgcttcatccgggcgaaagaaccccgtattggcaaatattgacggccagttaagccattcatgccagtaggcgcgcggacgaaagtaaacccactggtgataccattcgcgagcctccggatgacgaccgtagtgatgaatctctcctggcgggaacagcaaaatatcacccggtcggcaaacaaattctcgtccctgatttttcaccaccccctgaccgcgaatggtgagattgagaatataacctttcattcccagcggtcggtcgataaaaaaatcgagataaccgttggcctcaatcggcgttaaacccgccaccagatgggcattaaacgagtatcccggcagcaggggatcattttgcgcttcagccatacttttcatactcccgccattcagagaagaaaccaattgtccatattgcatcagacattgccgtcactgcgtcttttactggctcttctcgctaaccaaaccggtaaccccgcttattaaaagcattctgtaacaaagcgggaccaaagccatgacaaaaacgcgtaacaaaagtgtctataatcacggcagaaaagtccacattgattatttgcacggcgtcacactttgctatgccatagcatttttatccataagattagcggatcctacctgacgctttttatcgcaactctctactgtttctccatacccgtttttttgggctagctactagagaaagaggagaaatactagatggcttcctccgaagacgttatcaaagagttcatgcgtttcaaagttcgtatggaaggttccgttaacggtcacgagttcgaaatcgaaggtgaaggtgaaggtcgtccgtacgaaggtacccagaccgctaaactgaaagttaccaaaggtggtccgctgccgttcgcttgggacatcctgtccccgcagttccagtacggttccaaagcttacgttaaacacccggctgacatcccggactacctgaaactgtccttcccggaaggtttcaaatgggaacgtgttatgaacttcgaagacggtggtgttgttaccgttacccaggactcctccctgcaagacggtgagttcatctacaaagttaaactgcgtggtaccaacttcccgtccgacggtccggttatgcagaaaaaaaccatgggttgggaagcttccaccgaacgtatgtacccggaagacggtgctctgaaaggtgaaatcaaaatgcgtctgaaactgaaagacggtggtcactacgacgctgaagttaaaaccacctacatggctaaaaaaccggttcagctgccgggtgcttacaaaaccgacatcaaactggacatcacctcccacaacgaagactacaccatcgttgaacagtacgaacgtgctgaaggtcgtcactccaccggtgcttaataacgctgatagtgctagtgtagatcgctactagagcgcaaaaaaccccgcttcggcggggttttttcgctactagagaaagaggagaaatactagatgcgtaaaggagaagaacttttcactggagttgtcccaattcttgttgaattagatggtgatgttaatgggcacaaattttctgtcagtggagagggtgaaggtgatgcaacatacggaaaacttacccttaaatttatttgcactactggaaaactacctgttccatggccaacacttgtcactactttcggttatggtgttcaatgctttgcgagatacccagatcatatgaaacagcatgactttttcaagagtgccatgcccgaaggttatgtacaggaaagaactatatttttcaaagatgacgggaactacaagacacgtgctgaagtcaagtttgaaggtgatacccttgttaatagaatcgagttaaaaggtattgattttaaagaagatggaaacattcttggacacaaattggaatacaactataactcacacaatgtatacatcatggcagacaaacaaaagaatggaatcaaagttaacttcaaaattagacacaacattgaagatggaagcgttcaactagcagaccattatcaacaaaatactccaattggcgatggccctgtccttttaccagacaaccattacctgtccacacaatctgccctttcgaaagatcccaacgaaaagagagaccacatggtccttcttgagtttgtaacagctgctgggattacacatggcatggatgaactatacaaataataatactagagccaggcatcaaataaaacgaaaggctcagtcgaaagactgggcctttcgttttatctgttgtttgtcggtgaacgctctctactagagtcacactggctcaccttcgggtgggcctttctgcgtttata",
+                    "encoding": "http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html",
+                    "father_id": "https://synbiohub.org/public/igem/BBa_B3202"
+                }
+            ],
+            "Component": [
+                {
+                    "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B3202/component2270279",
+                    "displayId": "component2270279",
+                    "version": "1",
+                    "title": "BBa_I13516",
+                    "topLevel": "https://synbiohub.org/public/igem/BBa_B3202/1",
+                    "definition": "https://synbiohub.org/public/igem/BBa_I13516/1",
+                    "access": "http://sbols.org/v2#public",
+                    "father_id": "https://synbiohub.org/public/igem/BBa_B3202"
+                },
+                {
+                    "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B3202/component2270294",
+                    "displayId": "component2270294",
+                    "version": "1",
+                    "title": "BBa_B1202",
+                    "topLevel": "https://synbiohub.org/public/igem/BBa_B3202/1",
+                    "definition": "https://synbiohub.org/public/igem/BBa_B1202/1",
+                    "access": "http://sbols.org/v2#public",
+                    "father_id": "https://synbiohub.org/public/igem/BBa_B3202"
+                }
+            ],
+            "SequenceAnnotation": [
+                {
+                    "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B3202/annotation2270279",
+                    "displayId": "annotation2270279",
+                    "version": "1",
+                    "title": "BBa_I13516",
+                    "topLevel": "https://synbiohub.org/public/igem/BBa_B3202/1",
+                    "component": "https://synbiohub.org/public/igem/BBa_B3202/component2270279/1",
+                    "father_id": "https://synbiohub.org/public/igem/BBa_B3202",
+                    "Location": [
+                        {
+                            "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B3202/annotation2270279/range2270279",
+                            "displayId": "range2270279",
+                            "version": "1",
+                            "topLevel": "https://synbiohub.org/public/igem/BBa_B3202/1",
+                            "direction": "http://wiki.synbiohub.org/wiki/Terms/igem#direction/reverse",
+                            "start": 1,
+                            "end": 1943,
+                            "orientation": "http://sbols.org/v2#inline",
+                            "father_id": "https://synbiohub.org/public/igem/BBa_B3202/annotation2270279"
+                        }
+                    ]
+                },
+                {
+                    "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B3202/annotation2270294",
+                    "displayId": "annotation2270294",
+                    "version": "1",
+                    "title": "BBa_B1202",
+                    "topLevel": "https://synbiohub.org/public/igem/BBa_B3202/1",
+                    "component": "https://synbiohub.org/public/igem/BBa_B3202/component2270294/1",
+                    "father_id": "https://synbiohub.org/public/igem/BBa_B3202",
+                    "Location": [
+                        {
+                            "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B3202/annotation2270294/range2270294",
+                            "displayId": "range2270294",
+                            "version": "1",
+                            "topLevel": "https://synbiohub.org/public/igem/BBa_B3202/1",
+                            "direction": "http://wiki.synbiohub.org/wiki/Terms/igem#direction/reverse",
+                            "start": 1951,
+                            "end": 2868,
+                            "orientation": "http://sbols.org/v2#inline",
+                            "father_id": "https://synbiohub.org/public/igem/BBa_B3202/annotation2270294"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "persistentIdentity": "https://synbiohub.org/public/igem/BBa_E0040",
+            "displayId": "BBa_E0040",
+            "version": "1",
+            "wasDerivedFrom": "http://parts.igem.org/Part:BBa_E0040",
+            "wasGeneratedBy": "https://synbiohub.org/public/igem/igem2sbol/1",
+            "title": "GFP",
+            "description": null,
+            "created": "2004-09-29T11:00:00Z",
+            "modified": "2016-01-26T02:09:38Z",
+            "mutableProvenance": null,
+            "topLevel": "https://synbiohub.org/public/igem/BBa_E0040/1",
+            "mutableDescription": "GFP (mut3b) [note that this part does not have a barcode]",
+            "mutableNotes": null,
+            "creator": "jcbraff",
+            "type": "http://www.biopax.org/release/biopax-level3.owl#DnaRegion",
+            "role": "cds",
+            "Sequence": [
+                {
+                    "persistentIdentity": "https://synbiohub.org/public/igem/BBa_E0040_sequence",
+                    "displayId": "BBa_E0040_sequence",
+                    "version": "1",
+                    "wasDerivedFrom": "http://parts.igem.org/Part:BBa_E0040",
+                    "wasGeneratedBy": "https://synbiohub.org/public/igem/igem2sbol/1",
+                    "topLevel": "https://synbiohub.org/public/igem/BBa_E0040_sequence/1",
+                    "ownedBy": [
+                        "https://synbiohub.org/user/myers",
+                        "https://synbiohub.org/user/james"
+                    ],
+                    "elements": "atgcgtaaaggagaagaacttttcactggagttgtcccaattcttgttgaattagatggtgatgttaatgggcacaaattttctgtcagtggagagggtgaaggtgatgcaacatacggaaaacttacccttaaatttatttgcactactggaaaactacctgttccatggccaacacttgtcactactttcggttatggtgttcaatgctttgcgagatacccagatcatatgaaacagcatgactttttcaagagtgccatgcccgaaggttatgtacaggaaagaactatatttttcaaagatgacgggaactacaagacacgtgctgaagtcaagtttgaaggtgatacccttgttaatagaatcgagttaaaaggtattgattttaaagaagatggaaacattcttggacacaaattggaatacaactataactcacacaatgtatacatcatggcagacaaacaaaagaatggaatcaaagttaacttcaaaattagacacaacattgaagatggaagcgttcaactagcagaccattatcaacaaaatactccaattggcgatggccctgtccttttaccagacaaccattacctgtccacacaatctgccctttcgaaagatcccaacgaaaagagagaccacatggtccttcttgagtttgtaacagctgctgggattacacatggcatggatgaactatacaaataataa",
+                    "encoding": "http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html",
+                    "father_id": "https://synbiohub.org/public/igem/BBa_E0040"
+                }
+            ],
+            "Component": [],
+            "SequenceAnnotation": [
+                {
+                    "persistentIdentity": "https://synbiohub.org/public/igem/BBa_E0040/annotation1934520",
+                    "displayId": "annotation1934520",
+                    "version": "1",
+                    "title": "GFP protein",
+                    "topLevel": "https://synbiohub.org/public/igem/BBa_E0040/1",
+                    "component": null,
+                    "father_id": "https://synbiohub.org/public/igem/BBa_E0040",
+                    "Location": [
+                        {
+                            "persistentIdentity": "https://synbiohub.org/public/igem/BBa_E0040/annotation1934520/range1934520",
+                            "displayId": "range1934520",
+                            "version": "1",
+                            "topLevel": "https://synbiohub.org/public/igem/BBa_E0040/1",
+                            "direction": "http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward",
+                            "start": 1,
+                            "end": 721,
+                            "orientation": "http://sbols.org/v2#inline",
+                            "father_id": "https://synbiohub.org/public/igem/BBa_E0040/annotation1934520"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "persistentIdentity": "https://synbiohub.org/public/igem/BBa_E1010",
+            "displayId": "BBa_E1010",
+            "version": "1",
+            "wasDerivedFrom": "http://parts.igem.org/Part:BBa_E1010",
+            "wasGeneratedBy": "https://synbiohub.org/public/igem/igem2sbol/1",
+            "title": "mRFP1",
+            "description": null,
+            "created": "2004-07-27T11:00:00Z",
+            "modified": "2015-08-31T04:07:26Z",
+            "mutableProvenance": "Campbell et al., PNAS v99 p7877 <a href=\"http://www.pubmedcentral.nih.gov/articlerender.fcgi?tool=pubmed&pubmedid=12060735\">URL</a>",
+            "topLevel": "https://synbiohub.org/public/igem/BBa_E1010/1",
+            "mutableDescription": "monomeric RFP:\nRed Fluorescent Protein.\nExcitation peak: 584 nm\nEmission peak: 607 nm",
+            "mutableNotes": "TAATAA double stop codon added (DE).\n\nFour silent mutations made to remove three EcoRI sites and one PstI site: A28G, A76G, A349G, G337A.",
+            "creator": "Drew Endy",
+            "type": "http://www.biopax.org/release/biopax-level3.owl#DnaRegion",
+            "role": "cds",
+            "Sequence": [
+                {
+                    "persistentIdentity": "https://synbiohub.org/public/igem/BBa_E1010_sequence",
+                    "displayId": "BBa_E1010_sequence",
+                    "version": "1",
+                    "wasDerivedFrom": "http://parts.igem.org/Part:BBa_E1010",
+                    "wasGeneratedBy": "https://synbiohub.org/public/igem/igem2sbol/1",
+                    "topLevel": "https://synbiohub.org/public/igem/BBa_E1010_sequence/1",
+                    "ownedBy": [
+                        "https://synbiohub.org/user/james",
+                        "https://synbiohub.org/user/myers"
+                    ],
+                    "elements": "atggcttcctccgaagacgttatcaaagagttcatgcgtttcaaagttcgtatggaaggttccgttaacggtcacgagttcgaaatcgaaggtgaaggtgaaggtcgtccgtacgaaggtacccagaccgctaaactgaaagttaccaaaggtggtccgctgccgttcgcttgggacatcctgtccccgcagttccagtacggttccaaagcttacgttaaacacccggctgacatcccggactacctgaaactgtccttcccggaaggtttcaaatgggaacgtgttatgaacttcgaagacggtggtgttgttaccgttacccaggactcctccctgcaagacggtgagttcatctacaaagttaaactgcgtggtaccaacttcccgtccgacggtccggttatgcagaaaaaaaccatgggttgggaagcttccaccgaacgtatgtacccggaagacggtgctctgaaaggtgaaatcaaaatgcgtctgaaactgaaagacggtggtcactacgacgctgaagttaaaaccacctacatggctaaaaaaccggttcagctgccgggtgcttacaaaaccgacatcaaactggacatcacctcccacaacgaagactacaccatcgttgaacagtacgaacgtgctgaaggtcgtcactccaccggtgcttaataacgctgatagtgctagtgtagatcgc",
+                    "encoding": "http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html",
+                    "father_id": "https://synbiohub.org/public/igem/BBa_E1010"
+                }
+            ],
+            "Component": [],
+            "SequenceAnnotation": [
+                {
+                    "persistentIdentity": "https://synbiohub.org/public/igem/BBa_E1010/annotation1014044",
+                    "displayId": "annotation1014044",
+                    "version": "1",
+                    "title": "mrfp1",
+                    "topLevel": "https://synbiohub.org/public/igem/BBa_E1010/1",
+                    "component": null,
+                    "father_id": "https://synbiohub.org/public/igem/BBa_E1010",
+                    "Location": [
+                        {
+                            "persistentIdentity": "https://synbiohub.org/public/igem/BBa_E1010/annotation1014044/range1014044",
+                            "displayId": "range1014044",
+                            "version": "1",
+                            "topLevel": "https://synbiohub.org/public/igem/BBa_E1010/1",
+                            "direction": "http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward",
+                            "start": 1,
+                            "end": 676,
+                            "orientation": "http://sbols.org/v2#inline",
+                            "father_id": "https://synbiohub.org/public/igem/BBa_E1010/annotation1014044"
+                        }
+                    ]
+                },
+                {
+                    "persistentIdentity": "https://synbiohub.org/public/igem/BBa_E1010/annotation2214014",
+                    "displayId": "annotation2214014",
+                    "version": "1",
+                    "title": "Help:Barcodes",
+                    "topLevel": "https://synbiohub.org/public/igem/BBa_E1010/1",
+                    "component": null,
+                    "father_id": "https://synbiohub.org/public/igem/BBa_E1010",
+                    "Location": [
+                        {
+                            "persistentIdentity": "https://synbiohub.org/public/igem/BBa_E1010/annotation2214014/range2214014",
+                            "displayId": "range2214014",
+                            "version": "1",
+                            "topLevel": "https://synbiohub.org/public/igem/BBa_E1010/1",
+                            "direction": "http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward",
+                            "start": 682,
+                            "end": 707,
+                            "orientation": "http://sbols.org/v2#inline",
+                            "father_id": "https://synbiohub.org/public/igem/BBa_E1010/annotation2214014"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "persistentIdentity": "https://synbiohub.org/public/igem/BBa_I0500",
+            "displayId": "BBa_I0500",
+            "version": "1",
+            "wasDerivedFrom": "http://parts.igem.org/Part:BBa_I0500",
+            "wasGeneratedBy": "https://synbiohub.org/public/igem/igem2sbol/1",
+            "title": "pBad/araC",
+            "description": null,
+            "created": "2003-12-05T12:00:00Z",
+            "modified": "2015-08-31T04:07:29Z",
+            "mutableProvenance": null,
+            "topLevel": "https://synbiohub.org/public/igem/BBa_I0500/1",
+            "mutableDescription": "-- No description --",
+            "mutableNotes": null,
+            "creator": "Sri Kosuri",
+            "type": "http://www.biopax.org/release/biopax-level3.owl#DnaRegion",
+            "role": "promoter",
+            "Sequence": [
+                {
+                    "persistentIdentity": "https://synbiohub.org/public/igem/BBa_I0500_sequence",
+                    "displayId": "BBa_I0500_sequence",
+                    "version": "1",
+                    "wasDerivedFrom": "http://parts.igem.org/Part:BBa_I0500",
+                    "wasGeneratedBy": "https://synbiohub.org/public/igem/igem2sbol/1",
+                    "topLevel": "https://synbiohub.org/public/igem/BBa_I0500_sequence/1",
+                    "ownedBy": [
+                        "https://synbiohub.org/user/james",
+                        "https://synbiohub.org/user/myers"
+                    ],
+                    "elements": "ttatgacaacttgacggctacatcattcactttttcttcacaaccggcacggaactcgctcgggctggccccggtgcattttttaaatacccgcgagaaatagagttgatcgtcaaaaccaacattgcgaccgacggtggcgataggcatccgggtggtgctcaaaagcagcttcgcctggctgatacgttggtcctcgcgccagcttaagacgctaatccctaactgctggcggaaaagatgtgacagacgcgacggcgacaagcaaacatgctgtgcgacgctggcgatatcaaaattgctgtctgccaggtgatcgctgatgtactgacaagcctcgcgtacccgattatccatcggtggatggagcgactcgttaatcgcttccatgcgccgcagtaacaattgctcaagcagatttatcgccagcagctccgaatagcgcccttccccttgcccggcgttaatgatttgcccaaacaggtcgctgaaatgcggctggtgcgcttcatccgggcgaaagaaccccgtattggcaaatattgacggccagttaagccattcatgccagtaggcgcgcggacgaaagtaaacccactggtgataccattcgcgagcctccggatgacgaccgtagtgatgaatctctcctggcgggaacagcaaaatatcacccggtcggcaaacaaattctcgtccctgatttttcaccaccccctgaccgcgaatggtgagattgagaatataacctttcattcccagcggtcggtcgataaaaaaatcgagataaccgttggcctcaatcggcgttaaacccgccaccagatgggcattaaacgagtatcccggcagcaggggatcattttgcgcttcagccatacttttcatactcccgccattcagagaagaaaccaattgtccatattgcatcagacattgccgtcactgcgtcttttactggctcttctcgctaaccaaaccggtaaccccgcttattaaaagcattctgtaacaaagcgggaccaaagccatgacaaaaacgcgtaacaaaagtgtctataatcacggcagaaaagtccacattgattatttgcacggcgtcacactttgctatgccatagcatttttatccataagattagcggatcctacctgacgctttttatcgcaactctctactgtttctccatacccgtttttttgggctagc",
+                    "encoding": "http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html",
+                    "father_id": "https://synbiohub.org/public/igem/BBa_I0500"
+                }
+            ],
+            "Component": [],
+            "SequenceAnnotation": [
+                {
+                    "persistentIdentity": "https://synbiohub.org/public/igem/BBa_I0500/annotation1498841",
+                    "displayId": "annotation1498841",
+                    "version": "1",
+                    "title": "Pbad",
+                    "topLevel": "https://synbiohub.org/public/igem/BBa_I0500/1",
+                    "component": null,
+                    "father_id": "https://synbiohub.org/public/igem/BBa_I0500",
+                    "Location": [
+                        {
+                            "persistentIdentity": "https://synbiohub.org/public/igem/BBa_I0500/annotation1498841/range1498841",
+                            "displayId": "range1498841",
+                            "version": "1",
+                            "topLevel": "https://synbiohub.org/public/igem/BBa_I0500/1",
+                            "direction": "http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward",
+                            "start": 1080,
+                            "end": 1211,
+                            "orientation": "http://sbols.org/v2#inline",
+                            "father_id": "https://synbiohub.org/public/igem/BBa_I0500/annotation1498841"
+                        }
+                    ]
+                },
+                {
+                    "persistentIdentity": "https://synbiohub.org/public/igem/BBa_I0500/annotation1498842",
+                    "displayId": "annotation1498842",
+                    "version": "1",
+                    "title": "PC",
+                    "topLevel": "https://synbiohub.org/public/igem/BBa_I0500/1",
+                    "component": null,
+                    "father_id": "https://synbiohub.org/public/igem/BBa_I0500",
+                    "Location": [
+                        {
+                            "persistentIdentity": "https://synbiohub.org/public/igem/BBa_I0500/annotation1498842/range1498842",
+                            "displayId": "range1498842",
+                            "version": "1",
+                            "topLevel": "https://synbiohub.org/public/igem/BBa_I0500/1",
+                            "direction": "http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward",
+                            "start": 1043,
+                            "end": 1115,
+                            "orientation": "http://sbols.org/v2#inline",
+                            "father_id": "https://synbiohub.org/public/igem/BBa_I0500/annotation1498842"
+                        }
+                    ]
+                },
+                {
+                    "persistentIdentity": "https://synbiohub.org/public/igem/BBa_I0500/annotation1498843",
+                    "displayId": "annotation1498843",
+                    "version": "1",
+                    "title": "AraC",
+                    "topLevel": "https://synbiohub.org/public/igem/BBa_I0500/1",
+                    "component": null,
+                    "father_id": "https://synbiohub.org/public/igem/BBa_I0500",
+                    "Location": [
+                        {
+                            "persistentIdentity": "https://synbiohub.org/public/igem/BBa_I0500/annotation1498843/range1498843",
+                            "displayId": "range1498843",
+                            "version": "1",
+                            "topLevel": "https://synbiohub.org/public/igem/BBa_I0500/1",
+                            "direction": "http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward",
+                            "start": 1,
+                            "end": 1080,
+                            "orientation": "http://sbols.org/v2#inline",
+                            "father_id": "https://synbiohub.org/public/igem/BBa_I0500/annotation1498843"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "persistentIdentity": "https://synbiohub.org/public/igem/BBa_I13516",
+            "displayId": "BBa_I13516",
+            "version": "1",
+            "wasDerivedFrom": "http://parts.igem.org/Part:BBa_I13516",
+            "wasGeneratedBy": "https://synbiohub.org/public/igem/igem2sbol/1",
+            "title": "BBa_I13516",
+            "description": null,
+            "created": "2005-06-05T11:00:00Z",
+            "modified": "2015-08-31T04:07:34Z",
+            "mutableProvenance": null,
+            "topLevel": "https://synbiohub.org/public/igem/BBa_I13516/1",
+            "mutableDescription": "Built by Josh as an intermediate in screening plasmid construction.",
+            "mutableNotes": "Deletion of the C at position 1194. This is right at the end of I0500, after the transcriptional start of the downstream gene but before the RBS. Shouldn't make a difference, but needs to be checked out.",
+            "creator": "jkm",
+            "type": "http://www.biopax.org/release/biopax-level3.owl#DnaRegion",
+            "role": "composite",
+            "Sequence": [
+                {
+                    "persistentIdentity": "https://synbiohub.org/public/igem/BBa_I13516_sequence",
+                    "displayId": "BBa_I13516_sequence",
+                    "version": "1",
+                    "wasDerivedFrom": "http://parts.igem.org/Part:BBa_I13516",
+                    "wasGeneratedBy": "https://synbiohub.org/public/igem/igem2sbol/1",
+                    "topLevel": "https://synbiohub.org/public/igem/BBa_I13516_sequence/1",
+                    "ownedBy": [
+                        "https://synbiohub.org/user/james",
+                        "https://synbiohub.org/user/myers"
+                    ],
+                    "elements": "ttatgacaacttgacggctacatcattcactttttcttcacaaccggcacggaactcgctcgggctggccccggtgcattttttaaatacccgcgagaaatagagttgatcgtcaaaaccaacattgcgaccgacggtggcgataggcatccgggtggtgctcaaaagcagcttcgcctggctgatacgttggtcctcgcgccagcttaagacgctaatccctaactgctggcggaaaagatgtgacagacgcgacggcgacaagcaaacatgctgtgcgacgctggcgatatcaaaattgctgtctgccaggtgatcgctgatgtactgacaagcctcgcgtacccgattatccatcggtggatggagcgactcgttaatcgcttccatgcgccgcagtaacaattgctcaagcagatttatcgccagcagctccgaatagcgcccttccccttgcccggcgttaatgatttgcccaaacaggtcgctgaaatgcggctggtgcgcttcatccgggcgaaagaaccccgtattggcaaatattgacggccagttaagccattcatgccagtaggcgcgcggacgaaagtaaacccactggtgataccattcgcgagcctccggatgacgaccgtagtgatgaatctctcctggcgggaacagcaaaatatcacccggtcggcaaacaaattctcgtccctgatttttcaccaccccctgaccgcgaatggtgagattgagaatataacctttcattcccagcggtcggtcgataaaaaaatcgagataaccgttggcctcaatcggcgttaaacccgccaccagatgggcattaaacgagtatcccggcagcaggggatcattttgcgcttcagccatacttttcatactcccgccattcagagaagaaaccaattgtccatattgcatcagacattgccgtcactgcgtcttttactggctcttctcgctaaccaaaccggtaaccccgcttattaaaagcattctgtaacaaagcgggaccaaagccatgacaaaaacgcgtaacaaaagtgtctataatcacggcagaaaagtccacattgattatttgcacggcgtcacactttgctatgccatagcatttttatccataagattagcggatcctacctgacgctttttatcgcaactctctactgtttctccatacccgtttttttgggctagctactagagaaagaggagaaatactagatggcttcctccgaagacgttatcaaagagttcatgcgtttcaaagttcgtatggaaggttccgttaacggtcacgagttcgaaatcgaaggtgaaggtgaaggtcgtccgtacgaaggtacccagaccgctaaactgaaagttaccaaaggtggtccgctgccgttcgcttgggacatcctgtccccgcagttccagtacggttccaaagcttacgttaaacacccggctgacatcccggactacctgaaactgtccttcccggaaggtttcaaatgggaacgtgttatgaacttcgaagacggtggtgttgttaccgttacccaggactcctccctgcaagacggtgagttcatctacaaagttaaactgcgtggtaccaacttcccgtccgacggtccggttatgcagaaaaaaaccatgggttgggaagcttccaccgaacgtatgtacccggaagacggtgctctgaaaggtgaaatcaaaatgcgtctgaaactgaaagacggtggtcactacgacgctgaagttaaaaccacctacatggctaaaaaaccggttcagctgccgggtgcttacaaaaccgacatcaaactggacatcacctcccacaacgaagactacaccatcgttgaacagtacgaacgtgctgaaggtcgtcactccaccggtgcttaataacgctgatagtgctagtgtagatcgc",
+                    "encoding": "http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html",
+                    "father_id": "https://synbiohub.org/public/igem/BBa_I13516"
+                }
+            ],
+            "Component": [
+                {
+                    "persistentIdentity": "https://synbiohub.org/public/igem/BBa_I13516/component1505485",
+                    "displayId": "component1505485",
+                    "version": "1",
+                    "title": "BBa_I0500",
+                    "topLevel": "https://synbiohub.org/public/igem/BBa_I13516/1",
+                    "definition": "https://synbiohub.org/public/igem/BBa_I0500/1",
+                    "access": "http://sbols.org/v2#public",
+                    "father_id": "https://synbiohub.org/public/igem/BBa_I13516"
+                },
+                {
+                    "persistentIdentity": "https://synbiohub.org/public/igem/BBa_I13516/component1505490",
+                    "displayId": "component1505490",
+                    "version": "1",
+                    "title": "BBa_B0034",
+                    "topLevel": "https://synbiohub.org/public/igem/BBa_I13516/1",
+                    "definition": "https://synbiohub.org/public/igem/BBa_B0034/1",
+                    "access": "http://sbols.org/v2#public",
+                    "father_id": "https://synbiohub.org/public/igem/BBa_I13516"
+                },
+                {
+                    "persistentIdentity": "https://synbiohub.org/public/igem/BBa_I13516/component1505497",
+                    "displayId": "component1505497",
+                    "version": "1",
+                    "title": "BBa_E1010",
+                    "topLevel": "https://synbiohub.org/public/igem/BBa_I13516/1",
+                    "definition": "https://synbiohub.org/public/igem/BBa_E1010/1",
+                    "access": "http://sbols.org/v2#public",
+                    "father_id": "https://synbiohub.org/public/igem/BBa_I13516"
+                }
+            ],
+            "SequenceAnnotation": [
+                {
+                    "persistentIdentity": "https://synbiohub.org/public/igem/BBa_I13516/annotation1505485",
+                    "displayId": "annotation1505485",
+                    "version": "1",
+                    "title": "BBa_I0500",
+                    "topLevel": "https://synbiohub.org/public/igem/BBa_I13516/1",
+                    "component": "https://synbiohub.org/public/igem/BBa_I13516/component1505485/1",
+                    "father_id": "https://synbiohub.org/public/igem/BBa_I13516",
+                    "Location": [
+                        {
+                            "persistentIdentity": "https://synbiohub.org/public/igem/BBa_I13516/annotation1505485/range1505485",
+                            "displayId": "range1505485",
+                            "version": "1",
+                            "topLevel": "https://synbiohub.org/public/igem/BBa_I13516/1",
+                            "direction": "http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward",
+                            "start": 1,
+                            "end": 1211,
+                            "orientation": "http://sbols.org/v2#inline",
+                            "father_id": "https://synbiohub.org/public/igem/BBa_I13516/annotation1505485"
+                        }
+                    ]
+                },
+                {
+                    "persistentIdentity": "https://synbiohub.org/public/igem/BBa_I13516/annotation1505490",
+                    "displayId": "annotation1505490",
+                    "version": "1",
+                    "title": "BBa_B0034",
+                    "topLevel": "https://synbiohub.org/public/igem/BBa_I13516/1",
+                    "component": "https://synbiohub.org/public/igem/BBa_I13516/component1505490/1",
+                    "father_id": "https://synbiohub.org/public/igem/BBa_I13516",
+                    "Location": [
+                        {
+                            "persistentIdentity": "https://synbiohub.org/public/igem/BBa_I13516/annotation1505490/range1505490",
+                            "displayId": "range1505490",
+                            "version": "1",
+                            "topLevel": "https://synbiohub.org/public/igem/BBa_I13516/1",
+                            "direction": "http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward",
+                            "start": 1219,
+                            "end": 1231,
+                            "orientation": "http://sbols.org/v2#inline",
+                            "father_id": "https://synbiohub.org/public/igem/BBa_I13516/annotation1505490"
+                        }
+                    ]
+                },
+                {
+                    "persistentIdentity": "https://synbiohub.org/public/igem/BBa_I13516/annotation1505497",
+                    "displayId": "annotation1505497",
+                    "version": "1",
+                    "title": "BBa_E1010",
+                    "topLevel": "https://synbiohub.org/public/igem/BBa_I13516/1",
+                    "component": "https://synbiohub.org/public/igem/BBa_I13516/component1505497/1",
+                    "father_id": "https://synbiohub.org/public/igem/BBa_I13516",
+                    "Location": [
+                        {
+                            "persistentIdentity": "https://synbiohub.org/public/igem/BBa_I13516/annotation1505497/range1505497",
+                            "displayId": "range1505497",
+                            "version": "1",
+                            "topLevel": "https://synbiohub.org/public/igem/BBa_I13516/1",
+                            "direction": "http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward",
+                            "start": 1237,
+                            "end": 1918,
+                            "orientation": "http://sbols.org/v2#inline",
+                            "father_id": "https://synbiohub.org/public/igem/BBa_I13516/annotation1505497"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

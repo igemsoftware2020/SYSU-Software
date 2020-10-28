@@ -123,7 +123,13 @@ const SimiliarResult: React.FunctionComponent<SimiliarResultProps> = (props) => 
                 minimal
               />
             </H5>
-            <SimpleDevice parts={d.ComponentDefinition.map((p) => ({ data: p }))} />
+            <SimpleDevice
+              parts={
+                d.ComponentDefinition.find((c) => c.displayId === d.persistentIdentity)?.Component?.map((p) => ({
+                  data: d.ComponentDefinition.find((c) => c.persistentIdentity === p.definition.replace("/1", ""))!,
+                })) ?? []
+              }
+            />
           </React.Fragment>
         ))}
         <H4>Articles</H4>

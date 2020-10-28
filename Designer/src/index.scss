@@ -3,6 +3,10 @@
 
 $igem-part-width: 72px;
 
+body {
+  background-color: $light-gray5;
+}
+
 .igem-mt-small {
   margin-top: $pt-grid-size;
 }

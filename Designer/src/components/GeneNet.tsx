@@ -62,7 +62,7 @@ export const GeneNet: React.FunctionComponent<GeneNetProps> = (props) => {
   const handleStartGenenetTask = useCallback(() => {
     setResult(null);
     setGeneState(1);
-    fireTask(geneNetReq);
+    fireTask({ ...geneNetReq, pruneLimit: (geneNetReq.pruneLimit ?? 0) * 11.392405063 + 0.886075949 });
   }, [fireTask, geneNetReq]);
 
   useEffect(() => {
@@ -135,21 +135,32 @@ export const GeneNet: React.FunctionComponent<GeneNetProps> = (props) => {
             setGeneNetReq(update(geneNetReq, { prune: { $set: e.target.checked } }))
           }
         />
-        <FormGroup label="Prune Limit" labelFor="prune-limit-input" labelInfo="(only required if [Prune] is on)">
-          <InputGroup
-            id="prune-limit-input"
-            placeholder="Limit of prune"
-            type="number"
-            defaultValue={geneNetReq.pruneLimit.toString()}
-            onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
-              setGeneNetReq(
-                update(geneNetReq, {
-                  pruneLimit: { $set: parseFloat(e.target.value) },
-                })
-              )
-            }
-          />
-        </FormGroup>
+        {geneNetReq.prune && (
+          <FormGroup
+            label="Prune Limit"
+            labelFor="prune-limit-input"
+            labelInfo="(only required if [Prune] is on)"
+            helperText="Prune limit is used to adjust the topology graph's complexity, higher value means higher complexity."
+          >
+            <InputGroup
+              id="prune-limit-input"
+              placeholder="Limit of prune"
+              type="number"
+              defaultValue={geneNetReq.pruneLimit.toString()}
+              onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+                setGeneNetReq(
+                  update(geneNetReq, {
+                    pruneLimit: { $set: parseFloat(e.target.value) },
+                  })
+                )
+              }
+            />
+          </FormGroup>
+        )}
+        <Callout className="igem-mb-small">
+          Use X-Y values to describe a function mapping time to substance amount. X represents the time, while Y
+          represents the substance amount.
+        </Callout>
         <FormGroup label="X-axis left" labelFor="start-input" labelInfo="(required)">
           <InputGroup
             id="start-input"
@@ -229,11 +240,13 @@ export const GeneNet: React.FunctionComponent<GeneNetProps> = (props) => {
     });
   }, [fireSearch, isl, result?.matrix]);
 
+  const [loadingResult, setLoadingResult] = useState(false);
   const [sResult, setSResult] = useState<GenenetSResponse | null>(null);
 
   useEffect(() => {
     if (!loadingSearch && dataSearch?.id) {
       const work = async () => {
+        setLoadingResult(true);
         setSResult(null);
         for (;;) {
           await waitFor(1000);
@@ -243,6 +256,7 @@ export const GeneNet: React.FunctionComponent<GeneNetProps> = (props) => {
             break;
           }
         }
+        setLoadingResult(false);
       };
 
       work();
@@ -253,6 +267,11 @@ export const GeneNet: React.FunctionComponent<GeneNetProps> = (props) => {
     <>
       <div className={Classes.DIALOG_BODY}>
         <H3>Analysis result</H3>
+        <Callout className="igem-mb-small">
+          Each cell (i, j) represents a predicted relation between vertex j and vertex i, where positive values
+          represents stimulation, and negative ones vice versa. Vertex 1 is always the input, and vertex 2 is always the
+          output, whose value fits the plot given previously.
+        </Callout>
         <HTMLTable className={classnames(Classes.HTML_TABLE_BORDERED, Classes.HTML_TABLE_CONDENSED)}>
           <thead>
             <tr>
@@ -284,7 +303,7 @@ export const GeneNet: React.FunctionComponent<GeneNetProps> = (props) => {
       </div>
       <div className={Classes.DIALOG_FOOTER}>
         <div className={Classes.DIALOG_FOOTER_ACTIONS}>
-          <Button onClick={handleMatrixProceed} intent={Intent.PRIMARY} loading={loadingSearch}>
+          <Button onClick={handleMatrixProceed} intent={Intent.PRIMARY} loading={loadingSearch || loadingResult}>
             Proceed
           </Button>
           <Button onClick={handleCloseGenenetDialog}>Close</Button>
