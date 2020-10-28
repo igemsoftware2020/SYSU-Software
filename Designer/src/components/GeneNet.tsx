@@ -269,7 +269,7 @@ export const GeneNet: React.FunctionComponent<GeneNetProps> = (props) => {
         <H3>Analysis result</H3>
         <Callout className="igem-mb-small">
           Each cell (i, j) represents a predicted relation between vertex j and vertex i, where positive values
-          represents stimulation, and negative ones vice versa. Vertex 1 is always the input, and vertex 2 is always the
+          represents stimulation, and negative ones vice versa. Vertex 0 is always the input, and vertex 1 is always the
           output, whose value fits the plot given previously.
         </Callout>
         <HTMLTable className={classnames(Classes.HTML_TABLE_BORDERED, Classes.HTML_TABLE_CONDENSED)}>
@@ -297,8 +297,8 @@ export const GeneNet: React.FunctionComponent<GeneNetProps> = (props) => {
         </FormGroup>
         {!loadingSearch && sResult && (
           <Callout className="igem-mt-small" intent={Intent.SUCCESS}>
-            Circuit added to canvas. Input is {sResult?.Proposals?.Promoters?.[1]?.title} and output is&nbsp;
-            {sResult?.Proposals?.Promoters?.[2]?.title}.
+            Circuit added to canvas. Input is {sResult?.Proposals?.Promoters?.[0]?.title} and output is&nbsp;
+            {sResult?.Proposals?.Promoters?.[1]?.title}.
           </Callout>
         )}
       </div>
