@@ -76,9 +76,9 @@ def searchRoadmap(mode: str, limit: int):
 
 
 @app.route("/api/design-graph/add", methods=['POST'])
-def addDesignGraph():
-    data = request.data
-    return dao.addDesignGraph(data)
+def addDesighGraph():
+    data = request.get_json()
+    return dao.addDesighGraph(data)
 
 
 if __name__ == '__main__':
