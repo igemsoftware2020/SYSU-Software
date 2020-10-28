@@ -1,4 +1,4 @@
-# SYSU-Software
+# Maloadis
 http://maloadis.sysu-software.com
 
 ## Environment
@@ -86,10 +86,15 @@ yarn start
 Congratulations! Now you are ready to go, to use the software, you can access `http://localhost:3000`.
 
 ## iGEM-CNN-Regression: Deep Learning: TF & Binding Sites Affinity Prediction.
-Make prediction within one line!  
-    `$ python predict.py YOUR_TF YOUR_DNA`
+Make prediction within one line!
 
-We made it a sepreated open-source project, please refer to our project repository [iGEM-CNN-Regression](https://github.com/sysu-software-2020/iGEM-CNN-Regression)
+```bash
+python predict.py YOUR_TF YOUR_DNA
+```
+
+We've made it a sepreated open-source project, source codes in `iGEM-CNN-Regression` direcotry of this repository is the first version and may be relatively old. 
+
+For the latest version, please refer to our project repository [iGEM-CNN-Regression](https://github.com/sysu-software-2020/iGEM-CNN-Regression).
     
 Our deep learning frame is shown below:  
 ![CNN_pic](https://github.com/sysu-software-2020/iGEM-CNN-Regression/blob/main/imgs/CNN.png)  

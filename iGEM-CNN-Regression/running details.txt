@@ -1,0 +1,3 @@
+数据处理
+1. 运行 data_process/data_process.py转化数据到csv文件，分别得到all_tf.csv  ,train_file.csv,test_file.csv
+2.运行get_tf_txtfile.py 得到去重后的 tf数据，存放到tf_txt.txt中
