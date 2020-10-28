@@ -37,10 +37,6 @@ export const Home: React.FunctionComponent = () => {
           </Link>
         </Col>
       </Row>
-      <H2 className="igem-mt-medium">
-        <b>About Us</b>
-      </H2>
-      <div className="igem-mt-medium"></div>
     </Container>
   );
 };

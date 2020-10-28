@@ -11,7 +11,6 @@ import os
 import sh
 import glob
 import random
-from SBOLXMLconverter import *
 
 componentDefinition_role_name: Dict = {}
 
@@ -325,9 +324,7 @@ def addElement(cnx, data) -> None:
 
 @db_helper(lambda data: data)
 def addDesignGraph(cnx, data):
-    jsondata = SBOLxml_to_json(data)
-    print(jsondata)
-    flag, message = utility.addDesignGraphHandler(cnx, json.loads(jsondata))
+    flag, message = utility.addDesighGraphHandler(cnx, data)
     if flag == False:
         raise Exception(message)
 
