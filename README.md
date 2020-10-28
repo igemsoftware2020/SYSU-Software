@@ -89,7 +89,7 @@ Congratulations! Now you are ready to go, to use the software, you can access `h
 Make prediction within one line!  
     `$ python predict.py YOUR_TF YOUR_DNA`
 
-We made it a sepreated open-source project, please refer to [CNN-Regression](https://github.com/sysu-software-2020/iGEM-CNN-Regression)
+We made it a sepreated open-source project, please refer to our project repository [iGEM-CNN-Regression](https://github.com/sysu-software-2020/iGEM-CNN-Regression)
     
 Our deep learning frame is shown below:  
 ![CNN_pic](https://github.com/sysu-software-2020/iGEM-CNN-Regression/blob/main/imgs/CNN.png)  
