@@ -3,7 +3,7 @@ http://maloadis.sysu-software.com
 
 ## Environment
 - OS: Ubuntu 18.04
-- SDKs & Softwares: MySQL 8.0.22, Python 3.7, .NET 5 RC2 SDK, gcc-10, g++-10
+- SDKs & Softwares: MySQL 8.0.22, Python 3.7, .NET 5 RC2 SDK, gcc-10, g++-10, nodejs 13, yarn
 - Important Notes: Please make sure your MySQL installation has a user named `root` with no password.
 
 ## Install Packages
