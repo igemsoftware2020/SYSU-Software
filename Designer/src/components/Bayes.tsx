@@ -41,7 +41,7 @@ export const Bayes: React.FunctionComponent<BayesProps> = (props: BayesProps) =>
   const [genes, setGenes] = useState<number>(3);
 
   const startSession = (iterNum: number, geneNum: number) => {
-    conn?.invoke("Start", iterNum); // , geneNum);
+    conn?.invoke("Start", geneNum, iterNum);
   };
 
   const provideResult = (result: number) => {
@@ -55,11 +55,11 @@ export const Bayes: React.FunctionComponent<BayesProps> = (props: BayesProps) =>
       .build();
 
     conn.start().catch((err) => console.log(err));
-    conn.on("ReceiveParameters", (x: number, y: number) => {
-      setValues([x, y]);
+    conn.on("ReceiveParameters", (v: number[]) => {
+      setValues(v);
     });
-    conn.on("ReceiveFinalResult", (target: number, x: number, y: number) => {
-      setValues([target, x, y]);
+    conn.on("ReceiveFinalResult", (target: number, v: number[]) => {
+      setValues([target, ...v]);
     });
     setConn(conn);
   }, []);
