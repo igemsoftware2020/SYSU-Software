@@ -297,7 +297,8 @@ export const GeneNet: React.FunctionComponent<GeneNetProps> = (props) => {
         </FormGroup>
         {!loadingSearch && sResult && (
           <Callout className="igem-mt-small" intent={Intent.SUCCESS}>
-            Circuit added to canvas.
+            Circuit added to canvas. Input is {sResult?.Proposals?.Promoters?.[1]?.title} and output is&nbsp;
+            {sResult?.Proposals?.Promoters?.[2]?.title}.
           </Callout>
         )}
       </div>

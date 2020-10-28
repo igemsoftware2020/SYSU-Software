@@ -130,7 +130,10 @@ export const Bayes: React.FunctionComponent<BayesProps> = (props: BayesProps) =>
             </>
           )}
           {state <= iters + 1 && (
-            <FormGroup label="Express Score">
+            <FormGroup
+              label="Express Score"
+              helperText="Express Score is used to describe the performance of your system, such as yield. The value range of Express level is [0,50], which linearly representes the genes expression level."
+            >
               <InputGroup
                 value={param}
                 disabled={state === 0}
