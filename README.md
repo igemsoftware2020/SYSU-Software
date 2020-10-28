@@ -92,7 +92,7 @@ Make prediction within one line!
 python predict.py YOUR_TF YOUR_DNA
 ```
 
-We've made it a sepreated open-source project, source codes in `iGEM-CNN-Regression` direcotry of this repository is the first version and may be relatively old. 
+We've made it a sepreated open-source project, source codes in `iGEM-CNN-Regression` directory of this repository is the first version and may be relatively old. 
 
 For the latest version, please refer to our project repository [iGEM-CNN-Regression](https://github.com/sysu-software-2020/iGEM-CNN-Regression).
     
