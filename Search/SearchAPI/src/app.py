@@ -83,4 +83,4 @@ def addDesignGraph():
 
 if __name__ == '__main__':
     dao.init()
-    app.run(debug=True)
+    app.run(debug=False,host='0.0.0.0',port=5001)
