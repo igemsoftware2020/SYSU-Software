@@ -1,4 +1,4 @@
-# SYSU-Software
+# Maloadis
 http://maloadis.sysu-software.com
 
 ## Environment
@@ -8,7 +8,7 @@ http://maloadis.sysu-software.com
 
 ## Install Packages
 ```bash
-sudo apt install libboost-dev libboost-all-dev libmysqlcppconn-dev libjsoncpp-dev
+sudo apt install libboost-dev libboost-all-dev libmysqlcppconn-dev libjsoncpp-dev cmake git build-essential
 python -m pip install keras==2.3.1 tensorflow==1.15.4 opencv-python Pillow matplotlib numpy==1.18.5 flask flask-cors mysql-connector-python Bayesian-Optimization scikit-learn==0.22.2 sh pySBOL fuzzywuzzy scipy 
 ```
 
@@ -24,6 +24,17 @@ mkdir build && cd build
 cmake .. -DCMAKE_CXX_FLAGS=-std=c++2a
 make -j8
 cp genenet_search ../../Backend/genenet/search
+```
+
+## Import Database
+```bash
+cd Database/genenetDB
+unzip genenetDB-dumps.zip
+mysql -u root < genenetDB-dumps.sql
+
+cd ../
+unzip roadmapDB-dumps.zip
+mysql -u root < roadmapDB-dumps.sql
 ```
 
 ## Run Server
@@ -86,10 +97,15 @@ yarn start
 Congratulations! Now you are ready to go, to use the software, you can access `http://localhost:3000`.
 
 ## iGEM-CNN-Regression: Deep Learning: TF & Binding Sites Affinity Prediction.
-Make prediction within one line!  
-    `$ python predict.py YOUR_TF YOUR_DNA`
+Make prediction within one line!
 
-We made it a sepreated open-source project, please refer to our project repository [iGEM-CNN-Regression](https://github.com/sysu-software-2020/iGEM-CNN-Regression)
+```bash
+python predict.py YOUR_TF YOUR_DNA
+```
+
+We've made it a sepreated open-source project, source codes in `iGEM-CNN-Regression` directory of this repository is the first version and may be relatively old. 
+
+For the latest version, please refer to our project repository [iGEM-CNN-Regression](https://github.com/sysu-software-2020/iGEM-CNN-Regression).
     
 Our deep learning frame is shown below:  
 ![CNN_pic](https://github.com/sysu-software-2020/iGEM-CNN-Regression/blob/main/imgs/CNN.png)  
