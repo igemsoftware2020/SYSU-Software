@@ -77,7 +77,7 @@ export const ImageRecogn: React.FunctionComponent<ImageRecognProps> = (props) =>
       setLoadingPart(false);
     };
     handler();
-  }, [data, handleCloseImageDialog, onResult]);
+  }, [data]);
 
   return (
     <>
