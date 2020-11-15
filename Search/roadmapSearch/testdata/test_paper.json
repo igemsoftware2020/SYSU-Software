@@ -1,0 +1,23 @@
+{
+    "persistentIdentity": "self_made_roadmap",
+    "article": null,
+    "description": null,
+    "ComponentDefinition": [
+        {
+            "displayId": "testcomposite",
+            "role": "Composite"
+        },
+        {
+            "displayId": "fskf",
+            "role": "CDS"
+        },
+        {
+            "displayId": "weinfkjs",
+            "role": "CDS"
+        },
+        {
+            "displayId": "powejo",
+            "role": "CDS"
+        }
+    ]
+}
