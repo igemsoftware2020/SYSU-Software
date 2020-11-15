@@ -24,8 +24,13 @@ import { useForm } from "react-hook-form";
 import { useSimulate } from "../hooks/api";
 import { useDesignerContext } from "../states/designer";
 
-export const Simulation: React.FunctionComponent = () => {
-  const [open, setOpen] = useState(false);
+export interface SimulationProps {
+  shown?: boolean;
+}
+
+export const Simulation: React.FunctionComponent<SimulationProps> = (props) => {
+  const { shown } = props;
+  const [open, setOpen] = useState(shown ?? false);
   const showDialog = useCallback(() => setOpen(true), []);
   const hideDialog = useCallback(() => setOpen(false), []);
 

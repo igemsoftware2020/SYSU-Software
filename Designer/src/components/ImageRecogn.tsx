@@ -15,10 +15,11 @@ import { ComponentDefinition } from "../types/design";
 export interface ImageRecognProps {
   onResult: (id: string, data: DeviceProps) => void;
   shown?: boolean;
+  highlight?: boolean;
 }
 
 export const ImageRecogn: React.FunctionComponent<ImageRecognProps> = (props) => {
-  const { shown, onResult } = props;
+  const { shown, onResult, highlight } = props;
 
   const [imageDialogOpen, setImageDialogOpen] = React.useState(shown ?? false);
   const handleOpenImageDialog = useCallback(() => setImageDialogOpen(true), []);
@@ -77,7 +78,7 @@ export const ImageRecogn: React.FunctionComponent<ImageRecognProps> = (props) =>
       setLoadingPart(false);
     };
     handler();
-  }, [data, handleCloseImageDialog, onResult]);
+  }, [data]);
 
   return (
     <>

@@ -24,6 +24,20 @@ python app.py
 }
 ```
 
+##### 导入SBOL文件
+
+##### URL
+
+```http
+/api/design-graph/add
+```
+
+##### METHOD
+
+POST
+
+body是完整的XML文件内容
+
 #### 根据TF名字查询元件
 
 ##### URL:

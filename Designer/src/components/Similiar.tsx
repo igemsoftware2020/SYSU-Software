@@ -158,7 +158,12 @@ const SimiliarResult: React.FunctionComponent<SimiliarResultProps> = (props) => 
   );
 };
 
-export const Similiar: React.FunctionComponent = () => {
+interface SimiliarProps {
+  highlight?: boolean;
+}
+
+export const Similiar: React.FunctionComponent<SimiliarProps> = (props) => {
+  const { highlight } = props;
   const [dialogOpen, setDialogOpen] = useState(false);
   const onOpenDialog = useCallback(() => {
     setDialogOpen(true);

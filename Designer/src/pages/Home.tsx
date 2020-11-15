@@ -1,4 +1,4 @@
-import { Button, Card, Classes, Elevation, H1, H2, H5, Menu, MenuItem, Popover } from "@blueprintjs/core";
+import { Alignment, Button, Card, Classes, Elevation, H1, H2, H5, Menu, MenuItem, Popover } from "@blueprintjs/core";
 import * as React from "react";
 import { Container, Row, Col } from "react-grid-system";
 import { IconNames } from "@blueprintjs/icons";
@@ -7,35 +7,34 @@ import { Link } from "react-router-dom";
 export const Home: React.FunctionComponent = () => {
   return (
     <Container>
-      <img src={require("url:../assets/logo.png")} height="180px" />
-      <H2 className="igem-mt-medium">
-        <b>Create Design</b>
-      </H2>
       <Row className="igem-mt-medium">
-        <Col xs={3}>
+        <Col>
+          <img src={require("url:../assets/main_logo.jpg")} height="180px" />
+        </Col>
+        <Col />
+        <Col />
+      </Row>
+      <Row className="igem-mt-medium">
+        <Col />
+        <Col>
+          <img useMap="#guidemap" src={require("url:../assets/guide.jpg")} height="250px" />
+          <map name="guidemap" id="guidemap">
+            <area shape="circle" coords="320,50,40" href="/designer#search" alt="Search" />
+            <area shape="circle" coords="320,200,40" href="/designer" alt="Design" />
+            <area shape="circle" coords="480,125,50" href="/designer#simulation" alt="Simulation" />
+            <area shape="circle" coords="630,125,60" href="/designer#bayes" alt="Bayes" />
+          </map>
+        </Col>
+        <Col />
+      </Row>
+      <Row className="igem-mt-medium">
+        <Col />
+        <Col>
           <Link to="/designer">
-            <Card interactive={true} elevation={Elevation.TWO}>
-              <H5>Manually</H5>
-              <p>The tranditional way of designing, by manually crafting parts.</p>
-            </Card>
+            <img src={require("url:../assets/logo.png")} height="100px" />
           </Link>
         </Col>
-        <Col xs={3}>
-          <Link to="/designer#image">
-            <Card interactive={true} elevation={Elevation.TWO}>
-              <H5>Image Recognition</H5>
-              <p>Import any design images, and recognize structured information.</p>
-            </Card>
-          </Link>
-        </Col>
-        <Col xs={3}>
-          <Link to="/designer#genenet">
-            <Card interactive={true} elevation={Elevation.TWO}>
-              <H5>Genenet Guided</H5>
-              <p>Use function to descibe target, and let Maloadis automatically infer design with Genenet.</p>
-            </Card>
-          </Link>
-        </Col>
+        <Col />
       </Row>
     </Container>
   );
