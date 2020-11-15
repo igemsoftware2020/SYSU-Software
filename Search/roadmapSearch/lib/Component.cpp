@@ -22,14 +22,4 @@ Component::Component(const json &j) {
     getValueFromJson<string>(j, "father_id", father_id);
 }
 
-json Component::generateJson() {
-    json j;
-    j["persistentIdentity"] = persistentIdentity;
-    j["displayId"] = displayId;
-    j["title"] = title;
-    j["definition"] = definition;
-    j["father_id"] = father_id;
-    return j;
-}
-
 }  // namespace RoadmapSearch

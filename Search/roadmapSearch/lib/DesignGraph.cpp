@@ -119,47 +119,19 @@ vector<string> DesignGraph::getComDefRoots() {
 }
 
 vector<vector<shared_ptr<BaseComDef>>> DesignGraph::getStructure(const bool& recursive_flag) {
+    auto roots = getComDefRoots();
+    auto is_root = unordered_map<string, bool>();
+    for (auto const& value : roots) {
+        is_root[value] = true;
+    }
     auto linkedlists = vector<vector<shared_ptr<BaseComDef>>>();
-    if (is_iGEM == false) {
-        auto linkedlist = vector<shared_ptr<BaseComDef>>();
-        for (auto const& p_comdef : componentDefinitions) {
-            auto p = make_shared<BaseComDef>(BaseComDef(p_comdef->persistentIdentity, p_comdef->displayId, p_comdef->useRole, p_comdef->role));
-            linkedlist.push_back(p);
-        }
-        linkedlists.push_back(linkedlist);
-    } else {
-        auto roots = getComDefRoots();
-        auto is_root = unordered_map<string, bool>();
-        for (auto const& value : roots) {
-            is_root[value] = true;
-        }
-
-        for (auto const& p_comdef : componentDefinitions) {
-            if (is_root[p_comdef->persistentIdentity]) {
-                auto linkedlist = getElementLinkedList(is_iGEM, p_comdef, recursive_flag);
-                linkedlists.push_back(linkedlist);
-            }
+    for (auto const& p_comdef : componentDefinitions) {
+        if (is_root[p_comdef->persistentIdentity]) {
+            auto linkedlist = getElementLinkedList(is_iGEM, p_comdef, recursive_flag);
+            linkedlists.push_back(linkedlist);
         }
     }
     return linkedlists;
-}
-
-void DesignGraph::output() {
-    for (auto const& p_comdef : componentDefinitions) {
-        cout << "comdef name = " << p_comdef->displayId << endl;
-    }
-}
-
-json DesignGraph::generateJson() {
-    json j;
-    j["persistentIdentity"] = persistentIdentity;
-    j["article"] = article;
-    j["description"] = description;
-    j["ComponentDefinition"] = vector<json>();
-    for (auto const& p_comdef : componentDefinitions) {
-        j["ComponentDefinition"].push_back(p_comdef->generateJson());
-    }
-    return j;
 }
 
 }  // namespace RoadmapSearch

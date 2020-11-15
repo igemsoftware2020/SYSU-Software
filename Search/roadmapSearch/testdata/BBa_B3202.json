@@ -38,7 +38,9 @@
             "mutableNotes": null,
             "creator": "Randy Rettberg",
             "type": "http://www.biopax.org/release/biopax-level3.owl#DnaRegion",
-            "role": "terminator",
+            "role": [
+                "Terminator"
+            ],
             "Sequence": [
                 {
                     "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B0010_sequence",
@@ -120,7 +122,9 @@
             "mutableNotes": "<P> <P>Suggested by Sri Kosuri and Drew Endy as a high efficiency terminator. The      5' end cutoff was placed immediately after the TAA stop codon and the 3' end      cutoff was placed just prior to the RBS of Gene 1.4 (before AAGGAG).<P> Use anywhere transcription should be stopped when the gene of interest is upstream of this terminator.",
             "creator": "Reshma Shetty",
             "type": "http://www.biopax.org/release/biopax-level3.owl#DnaRegion",
-            "role": "terminator",
+            "role": [
+                "Terminator"
+            ],
             "Sequence": [
                 {
                     "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B0012_sequence",
@@ -153,7 +157,7 @@
                             "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B0012/annotation1686/range1686",
                             "displayId": "range1686",
                             "version": "1",
-                        "topLevel": "https://synbiohub.org/public/igem/BBa_B0012/1",
+                            "topLevel": "https://synbiohub.org/public/igem/BBa_B0012/1",
                             "direction": "http://wiki.synbiohub.org/wiki/Terms/igem#direction/forward",
                             "start": 8,
                             "end": 28,
@@ -246,7 +250,10 @@
             "mutableNotes": "Varies from -6 to +1 region from original sequence to accomodate BioBricks      suffix.   <p>No secondary structures are formed in the given RBS region. Users should check      for secondary structures induced in the RBS by upstream and downstream elements      in the +50 to -50 region, as such structures will greatly affect the strength      of the RBS.\n\nContact info for this part: <a href=\"mailto:(bchow@media.mit.edu)\">Brian Chow</a>",
             "creator": "Vinay S Mahajan, Voichita D. Marinescu, Brian Chow, Alexander      D Wissner-Gross and Peter Carr IAP, 2003.",
             "type": "http://www.biopax.org/release/biopax-level3.owl#DnaRegion",
-            "role": "rbs",
+            "role": [
+                "ribosome_entry_site",
+                "RBS"
+            ],
             "Sequence": [
                 {
                     "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B0034_sequence",
@@ -306,7 +313,9 @@
             "mutableNotes": "Bidirectional, with the reverse estimated to be less effective than the forward. Has a polyA tail of 6 residues.",
             "creator": "Haiyao Huang",
             "type": "http://www.biopax.org/release/biopax-level3.owl#DnaRegion",
-            "role": "terminator",
+            "role": [
+                "Terminator"
+            ],
             "Sequence": [
                 {
                     "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B1002_sequence",
@@ -432,7 +441,10 @@
             "mutableNotes": "intermediate construct for screening terminators",
             "creator": "Haiyao Huang",
             "type": "http://www.biopax.org/release/biopax-level3.owl#DnaRegion",
-            "role": "composite",
+            "role": [
+                "engineered_region",
+                "Composite"
+            ],
             "Sequence": [
                 {
                     "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B1202_sequence",
@@ -631,7 +643,10 @@
             "mutableNotes": "final construct for screening terminators",
             "creator": "Haiyao Huang",
             "type": "http://www.biopax.org/release/biopax-level3.owl#DnaRegion",
-            "role": "composite",
+            "role": [
+                "Composite",
+                "engineered_region"
+            ],
             "Sequence": [
                 {
                     "persistentIdentity": "https://synbiohub.org/public/igem/BBa_B3202_sequence",
@@ -734,7 +749,10 @@
             "mutableNotes": null,
             "creator": "jcbraff",
             "type": "http://www.biopax.org/release/biopax-level3.owl#DnaRegion",
-            "role": "cds",
+            "role": [
+                "CDS",
+                "Coding"
+            ],
             "Sequence": [
                 {
                     "persistentIdentity": "https://synbiohub.org/public/igem/BBa_E0040_sequence",
@@ -794,7 +812,10 @@
             "mutableNotes": "TAATAA double stop codon added (DE).\n\nFour silent mutations made to remove three EcoRI sites and one PstI site: A28G, A76G, A349G, G337A.",
             "creator": "Drew Endy",
             "type": "http://www.biopax.org/release/biopax-level3.owl#DnaRegion",
-            "role": "cds",
+            "role": [
+                "CDS",
+                "Coding"
+            ],
             "Sequence": [
                 {
                     "persistentIdentity": "https://synbiohub.org/public/igem/BBa_E1010_sequence",
@@ -876,7 +897,10 @@
             "mutableNotes": null,
             "creator": "Sri Kosuri",
             "type": "http://www.biopax.org/release/biopax-level3.owl#DnaRegion",
-            "role": "promoter",
+            "role": [
+                "Regulatory",
+                "Promoter"
+            ],
             "Sequence": [
                 {
                     "persistentIdentity": "https://synbiohub.org/public/igem/BBa_I0500_sequence",
@@ -980,7 +1004,10 @@
             "mutableNotes": "Deletion of the C at position 1194. This is right at the end of I0500, after the transcriptional start of the downstream gene but before the RBS. Shouldn't make a difference, but needs to be checked out.",
             "creator": "jkm",
             "type": "http://www.biopax.org/release/biopax-level3.owl#DnaRegion",
-            "role": "composite",
+            "role": [
+                "engineered_region",
+                "Composite"
+            ],
             "Sequence": [
                 {
                     "persistentIdentity": "https://synbiohub.org/public/igem/BBa_I13516_sequence",

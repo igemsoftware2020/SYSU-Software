@@ -33,11 +33,7 @@ struct DesignGraph {
     vector<shared_ptr<BaseComDef>> getBaseComDef(const bool &recursive_flag);
     vector<string> getComDefRoots();
     vector<vector<shared_ptr<BaseComDef>>> getStructure(const bool &recursive_flag);
-    json generateJson();
-
     friend ostream &operator<<(ostream &, const DesignGraph &);
-
-    void output();
 };
 
 struct Activity {
@@ -91,7 +87,6 @@ struct ComponentDefinition : public BaseComDef {
     ComponentDefinition();
     ComponentDefinition(const json &);
     vector<string> getComponentPids();
-    json generateJson();
     friend ostream &operator<<(ostream &, const ComponentDefinition &);
 };
 
@@ -124,7 +119,6 @@ struct Component {
 
     Component();
     Component(const json &);
-    json generateJson();
     friend ostream &operator<<(ostream &, const Component &);
 };
 

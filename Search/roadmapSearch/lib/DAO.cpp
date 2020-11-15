@@ -389,15 +389,14 @@ vector<string> getCDSName(const string& name, const int& limit) {
     sql::ResultSet* res = nullptr;
 
     for (auto const& namesource : namesources) {
-        // string statement = "select distinct " + namesource + " from UniprotCDS";
-        string statement = "select * from UniprotCDS_" + namesource;
+        string statement = "select distinct " + namesource + " from UniprotCDS";
         stmt = con->prepareStatement(statement);
         res = stmt->executeQuery();
 
         string CDSname = "";
         int rt = 0;
         while (res->next()) {
-            CDSname = res->getString("name");
+            CDSname = res->getString(namesource);
             rt = -Levenshtein(CDSname, name, false);
             if (CDS_grade_q.size() < limit || rt > CDS_grade_q.top().second) {
                 CDS_grade_q.push(pair<string, int>(CDSname, rt));
