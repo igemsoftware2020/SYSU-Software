@@ -1,6 +1,6 @@
 import * as React from "react";
 import { FunctionComponent, useRef, useCallback } from "react";
-import { Alignment, Button, Classes, Navbar, Position, Toaster, Tooltip } from "@blueprintjs/core";
+import { Alignment, Button, Classes, Navbar, Popover, Position, Toaster, Tooltip } from "@blueprintjs/core";
 import { IconNames } from "@blueprintjs/icons";
 
 import { DndProvider, useDrop } from "react-dnd";
@@ -28,7 +28,7 @@ import { SaveLoad } from "../components/SaveLoad";
 
 export const DesignerCanvas: FunctionComponent = () => {
   const { editMode, setEditMode, editArgs, setEditArgs, devices, setDevices, links, setLinks } = useDesignerContext();
-
+  const [showGuide, setShowGuide] = React.useState(false);
   const [{ canDrop }, drop] = useDrop({
     accept: [ItemTypes.DEVICE, ItemTypes.PART],
     collect: (monitor) => ({
@@ -184,15 +184,15 @@ export const DesignerCanvas: FunctionComponent = () => {
 
   return (
     <div>
-      <Navbar>
+      <Navbar onClick={() => { setShowGuide(false); document.querySelector('#guide')?.remove(); }}>
         <Navbar.Group align={Alignment.LEFT}>
-          <Navbar.Heading>Maloadis</Navbar.Heading>
+          <Link to={'/'}><Navbar.Heading>Maloadis</Navbar.Heading></Link>
           <Navbar.Divider />
           <SaveLoad />
           <Navbar.Divider />
-          <ImageRecogn shown={init === "#image"} onResult={onImageRecognResult} />
+          <ImageRecogn shown={init === "#image"} highlight={init === "#similiar"} onResult={onImageRecognResult} />
           <GeneNet shown={init === "#genenet"} />
-          <Similiar />
+          <Similiar highlight={init === "#similiar"} />
           <Navbar.Divider />
           <Tooltip content="Drag mode">
             <Button className={Classes.MINIMAL} icon={IconNames.HAND} onClick={onResetMode} />
@@ -208,7 +208,7 @@ export const DesignerCanvas: FunctionComponent = () => {
           </Tooltip>
           <NewPart />
           <Navbar.Divider />
-          <Simulation />
+          <Simulation shown={init === '#simulation'} />
           <Tooltip content="Bayes optimization">
             <Bayes shown={init === "#bayes"} />
           </Tooltip>
@@ -217,7 +217,8 @@ export const DesignerCanvas: FunctionComponent = () => {
           <Navbar.Heading>Mode: {editMode}</Navbar.Heading>
         </Navbar.Group>
       </Navbar>
-      <Container fluid>
+
+      <Container fluid onClick={() => { setShowGuide(false); document.querySelector('#guide')?.remove();}}>
         <Row>
           <Col xs={9}>
             <div ref={drop} className="designer-canvas">
@@ -248,6 +249,21 @@ export const DesignerCanvas: FunctionComponent = () => {
           </Col>
         </Row>
       </Container>
+      {
+        showGuide ?
+          <div style={{ position: 'absolute', top: '50px' }}>
+            <img height="80px" src={require("url:../assets/guide/1.png")} style={{ position: 'absolute', left: '0px' }} />
+            <img height="80px" src={require("url:../assets/guide/2.png")} style={{ position: 'absolute', left: '100px' }} />
+            <img height="80px" src={require("url:../assets/guide/3.png")} style={{ position: 'absolute', left: '180px' }} />
+            <img height="80px" src={require("url:../assets/guide/4.png")} style={{ position: 'absolute', left: '320px' }} />
+            <img height="80px" src={require("url:../assets/guide/5.png")} style={{ position: 'absolute', left: '500px' }} />
+            <img height="80px" src={require("url:../assets/guide/6.png")} style={{ position: 'absolute', left: '650px' }} />
+            <img height="80px" src={require("url:../assets/guide/7.png")} style={{ position: 'absolute', left: '800px' }} />
+            <img height="80px" src={require("url:../assets/guide/8.png")} style={{ position: 'absolute', left: '920px' }} />
+            <img height="80px" src={require("url:../assets/guide/9.png")} style={{ position: 'absolute', left: '950px', top: '80px' }} />
+          </div> : null
+      }
+      <img id="guide" height="100px" src={require("url:../assets/guide/10.png")} style={{ position: 'absolute', left: '100px', top: '500px' }} onClick={() => setShowGuide(!showGuide) } />
     </div>
   );
 };
