@@ -36,6 +36,46 @@ export const Home: React.FunctionComponent = () => {
         </Col>
         <Col />
       </Row>
+      <Row className="igem-mt-medium">
+        <H2 className="igem-mt-medium">
+          <b>Fetured work</b>
+        </H2>
+      </Row>
+      <Row className="igem-mt-medium">
+        <Col xs={3}>
+          <Link to="/designer#genenet">
+            <Card style={{height: '150px'}} interactive={true} elevation={Elevation.TWO}>
+              <H5>Automated Design</H5>
+              <p>Automatically work out possible genetic circuits according to user's target gene expression demand.</p>
+            </Card>
+          </Link>
+        </Col>
+        <Col xs={3}>
+          <Link to="/designer#image">
+            <Card style={{height: '150px'}} interactive={true} elevation={Elevation.TWO}>
+              <H5>Image Search</H5>
+              <p>Search images by extracting part's and structural information from genetic circuit images.</p>
+            </Card>
+          </Link>
+        </Col>
+        <Col xs={3}>
+          <Link to="/designer#bayes">
+            <Card style={{height: '150px'}} interactive={true} elevation={Elevation.TWO}>
+              <H5>Parameter Optimization</H5>
+              <p>Improve wet-lab results by providing suggestions on parameter optimization.</p>
+            </Card>
+          </Link>
+        </Col>
+        <Col xs={3}>
+          <Link to="/designer#simulation">
+            <Card style={{height: '150px'}} interactive={true} elevation={Elevation.TWO}>
+              <H5>Simulation</H5>
+              <p>Simulate genetic circuit expression.</p>
+            </Card>
+          </Link>
+        </Col>
+      </Row>
+      <Row style={{height: '50px'}} />
     </Container>
   );
 };
