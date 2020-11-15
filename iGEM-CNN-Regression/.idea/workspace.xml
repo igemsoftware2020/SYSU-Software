@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1bdc7a8d-2d93-481b-b0e1-62652a38678a" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1jGz90sKBRKHlAHlbWXRdq33nvF" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="sortByType" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="H:/video-caption/video-caption" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="H:\train_data\DNA\code\data_process" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="H:\train_data\DNA\code\data_process" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.predict">
+    <configuration name="data_process" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="code" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/data_process" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_process/data_process.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="mdel" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="code" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/model" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/model/mdel.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="predict" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="code" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/predict.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="read_data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="code" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/data_process" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_process/read_data.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="train" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <output_file path="$PROJECT_DIR$/train_log.txt" is_save="true" />
+      <module name="code" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/train.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.data_process" />
+      <item itemvalue="Python.read_data" />
+      <item itemvalue="Python.train" />
+      <item itemvalue="Python.mdel" />
+      <item itemvalue="Python.predict" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.predict" />
+        <item itemvalue="Python.train" />
+        <item itemvalue="Python.data_process" />
+        <item itemvalue="Python.mdel" />
+        <item itemvalue="Python.read_data" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1bdc7a8d-2d93-481b-b0e1-62652a38678a" name="Default Changelist" comment="" />
+      <created>1603445060406</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603445060406</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="828" y="166" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603534697494">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="828" y="166" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603534697494" />
+    <state x="907" y="436" width="917" height="600" key="#xdebugger.evaluate" timestamp="1603632142189">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="907" y="436" width="917" height="600" key="#xdebugger.evaluate/0.0.1920.1040@0.0.1920.1040" timestamp="1603632142189" />
+    <state width="1661" height="466" key="DebuggerActiveHint" timestamp="1603550976274">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1661" height="466" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1603550976274" />
+    <state x="510" y="153" width="1660" height="718" key="DiffContextDialog" timestamp="1603448786669">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="510" y="153" width="1660" height="718" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603448786669" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1603701606628">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1603701606628" />
+    <state width="1899" height="368" key="GridCell.Tab.0.bottom" timestamp="1603699878124">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="368" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603699878124" />
+    <state width="1899" height="368" key="GridCell.Tab.0.center" timestamp="1603699878123">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="368" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603699878123" />
+    <state width="1899" height="368" key="GridCell.Tab.0.left" timestamp="1603699878122">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="368" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603699878122" />
+    <state width="1899" height="368" key="GridCell.Tab.0.right" timestamp="1603699878124">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="368" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603699878124" />
+    <state width="1822" height="280" key="GridCell.Tab.1.bottom" timestamp="1603636240372">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1822" height="280" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603636240372" />
+    <state width="1822" height="280" key="GridCell.Tab.1.center" timestamp="1603636240372">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1822" height="280" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603636240372" />
+    <state width="1822" height="280" key="GridCell.Tab.1.left" timestamp="1603636240372">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1822" height="280" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603636240372" />
+    <state width="1822" height="280" key="GridCell.Tab.1.right" timestamp="1603636240372">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1822" height="280" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603636240372" />
+    <state x="623" y="150" key="SettingsEditor" timestamp="1603445455641">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="150" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1603445455641" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/data_process/data_process.py</url>
+          <line>18</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/train.py</url>
+          <line>53</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/predict.py</url>
+          <line>17</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

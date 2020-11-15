@@ -20,8 +20,8 @@ from model.mdel import MyNet
 batch_size = 200
 transform = transforms.Compose([transforms.ToTensor()])
 
-train_data = DatasetFromCSV(r'H:\train_data\DNA\code\data_process\train_file.csv', transform)
-test_data = DatasetFromCSV(r'H:\train_data\DNA\code\data_process\test_file.csv', transform)
+train_data = DatasetFromCSV(r'/home/mist/iGEM-CNN-Regression/data_process/train_file.csv', transform)
+test_data = DatasetFromCSV(r'/home/mist/iGEM-CNN-Regression/data_process/test_file.csv', transform)
 
 train_loader = torch.utils.data.DataLoader(train_data, batch_size=batch_size,drop_last=False)
 test_loader = torch.utils.data.DataLoader(test_data, batch_size=batch_size,drop_last=False)

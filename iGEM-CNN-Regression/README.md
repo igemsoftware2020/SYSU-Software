@@ -21,14 +21,24 @@ Installing python is very easy, see the tutorial here! [Let's begin with Python!
     ` $ git clone https://github.com/sysu-software-2020/iGEM-CNN-Regression.git  ` 
 
     To make sure you don't have to worry about annoying packages, you can install python dependencies here!  
-    ` $ pip install -r requirements.txt ` 
-
+    ` $ pip install -r requirements.txt `  
+    
+    And last preparation, modify the [absolute path](https://github.com/sysu-software-2020/iGEM-CNN-Regression/blob/d6b46481d815da40d8aa0989c53be9c0ea865d8d/predict.py#L23) of test data(./iGEM-CNN-Regression/data_process/test_file.csv)  
+    
     Then run local program to predict your result:
-    1. YOUR_TF : TF name you need as variable  
-    2. YOUR_DNA: biding-site you want to predict  
+    1. YOUR_TF : TF name.   
+    2. YOUR_DNA: biding-site you want to predict.   
 
-    `$ python predict.py YOUR_TF YOUR_DNA`
-
+    `$ python predict_value.py YOUR_TF YOUR_DNA`
+    
+    Example:  
+    `$ python predict_value.py P07269	GAACAACTAGCATCCCCGATAAGACGGAATAGAATAGTAAAGATTGTGATTCATTGGCAGGTCCATTGTCGCATTACTAAATCATAGGCATGGAAATTTCCAGTTCACCATGGAACGACGGT`  
+    
+    And the result(score) is :  
+    `1.62477`  
+    
+3. Train this deep learning model on your own?
+    Additionally, if you want to train datas on your own, modify the model's [training data path](https://github.com/sysu-software-2020/iGEM-CNN-Regression/blob/d6b46481d815da40d8aa0989c53be9c0ea865d8d/train.py#L23) and [test data path](https://github.com/sysu-software-2020/iGEM-CNN-Regression/blob/d6b46481d815da40d8aa0989c53be9c0ea865d8d/train.py#L24) corresponding to your computer.
 
 ## IGEM graphic model
 Our deep learning frame is shown here:  
@@ -39,7 +49,6 @@ See our (raw) model here: https://github.com/Lorisyy/iGEM-CNN-Regression/blob/ma
 ## Running details
 Data processing.  
 1. Run data_process/data_process.py which converts data to the csv file and get all_tf.csv, train_file.csv, test_file.csv, respectively
-2. Run get_tf_txtfile.py to get the refined tf data in tf_txt.txt
+2. Run get_tf_txtfile.py to get the refined tf data in tf_txt.txt   
 
-
-This may confuse you somewhere, please contact me.
+This may confuse you somewhere, please contact me: suyy26@mail2.sysu.edu.cn .
