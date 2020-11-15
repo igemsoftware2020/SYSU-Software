@@ -20,7 +20,7 @@ from model.mdel import MyNet
 import matplotlib.pyplot as plt
 transform = transforms.Compose([transforms.ToTensor()])
 batch_size = 1
-test_data = DatasetFromCSV(r'H:\train_data\DNA\code\data_process\test_file.csv', transform)
+test_data = DatasetFromCSV(r'/home/mist/iGEM-CNN-Regression/data_process/test_file.csv', transform)
 test_loader = torch.utils.data.DataLoader(test_data, batch_size=batch_size)
 
 net = MyNet()

@@ -21,7 +21,7 @@ class DatasetFromCSV(Dataset):
                       'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n',
                       'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x',
                       'y', 'z']
-        with open(r"H:\train_data\DNA\code\data_process\tf_txt.txt", "r") as f:
+        with open(r"/home/mist/iGEM-CNN-Regression/data_process/tf_txt.txt", "r") as f:
             self.all_tf_txt = [file.strip() for file in f.readlines()]
     def to_categorical(self,y, num_classes=52):
         y = np.array(y)
