@@ -44,6 +44,7 @@ ComponentDefinition::ComponentDefinition(const json& j) {
     getValueFromJson<string>(j, "type", type);
     getVectorFromJson<string>(j, "role", role);
 
+    useRole = "";
     for (auto const& rname : role) {
         for (auto const& basic_role : basic_roles) {
             if (rname == basic_role) {
@@ -52,6 +53,7 @@ ComponentDefinition::ComponentDefinition(const json& j) {
             }
         }
     }
+    if (useRole == "") useRole = "Composite";
 
     // fix gene name
     if (useRole == "CDS" && displayId.substr(0, 4) != "BBa_") {
@@ -86,6 +88,18 @@ vector<string> ComponentDefinition::getComponentPids() {
         coms.push_back(p_com->definition);
     }
     return coms;
+}
+
+json ComponentDefinition::generateJson() {
+    json j;
+    j["persistentIdentity"] = persistentIdentity;
+    j["displayId"] = displayId;
+    j["role"] = useRole;
+    j["component"] = vector<json>();
+    for (auto const& p_com : components) {
+        j["component"].push_back(p_com->generateJson());
+    }
+    return j;
 }
 
 }  // namespace RoadmapSearch

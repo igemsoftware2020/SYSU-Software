@@ -8,6 +8,7 @@
 #include <mysql_driver.h>
 
 #include <algorithm>
+#include <boost/filesystem.hpp>
 #include <boost/program_options.hpp>
 #include <cmath>
 #include <cstdarg>
@@ -34,14 +35,24 @@
 
 namespace RoadmapSearch {
 
+using boost::filesystem::path;
 using std::cin;
 using std::cout;
 using std::endl;
 using std::exception;
 using std::ifstream;
+using std::ofstream;
 using std::string;
 using std::stringstream;
 using json = nlohmann::json;
+
+void printOriginDesignGraph(DesignGraph& design_graph, const string& output_dir) {
+    auto filepath = path(output_dir) / path("origin_graph.json");
+    ofstream f;
+    f.open(filepath.string(), std::ofstream::out);
+    f << design_graph.generateJson() << endl;
+    f.close();
+}
 
 void mainHandler(const string& host_name, const string& port_name, const string& user_name, const string& password, const string& database_name, const int& limit, const bool& structure_flag, const bool& element_flag, const bool& recursive_structure_flag, const bool& recursive_element_flag, const string& input_file_path, const string& exec_dir, const string& output_dir) throw() {
     try {
@@ -66,6 +77,8 @@ void mainHandler(const string& host_name, const string& port_name, const string&
         fs >> j;
 
         DesignGraph design_graph = DesignGraph(j);
+
+        printOriginDesignGraph(design_graph, output_dir);
 
         if (element_flag || recursive_element_flag) {
             searchInElement(design_graph, limit, recursive_element_flag, exec_dir, output_dir);
